@@ -1,15 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbarstyle.css";
 
 const SubNavigation = ({ item }) => {
-
   return (
-    <ul
-      className="block"
-    >
-      <li className={item.cName}>
-      <Link to={item.path}>{item.title}</Link>
+    <ul className="block">
+      <li className="flex items-center px-3 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+        <Link to={item.path}>{item.title}</Link>
       </li>
     </ul>
   );

@@ -4,9 +4,12 @@ import "./navbarstyle.css";
 // import { Popover } from "@headlessui/react";
 import KD from "./KDDropDown";
 import KE from "./KEDropDown";
+import KDSUB from "./KDSubDropDown";
 import KME from "./KMEDropDown";
 import KV from "./KVDropDown";
 import { MenuItems } from "./MenuItems";
+import { KDItems } from "./KDItems";
+import { KDSub } from "./KDSub";
 import TestDropdown from "./TestDropdown";
 
 export default function Navbar() {
@@ -14,9 +17,9 @@ export default function Navbar() {
 
   const [dropdown, setDropdown] = useState(false);
   const [KDdropdown, setKDDropdown] = useState(false);
+
   const [KEdropdown, setKEDropdown] = useState(false);
-  const [KVdropdown, setKVDropdown] = useState(false);
-  const [KMEdropdown, setKMEDropdown] = useState(false);
+
   const onMouseEnter = () => {
     if (window.innerWidth < 1000) {
       setDropdown(false);
@@ -45,6 +48,7 @@ export default function Navbar() {
       setKEDropdown(false);
     }
   };
+
   const onKDMouseEnter = () => {
     if (window.innerWidth < 1000) {
       setKDDropdown(false);
@@ -57,34 +61,6 @@ export default function Navbar() {
       setKDDropdown(false);
     } else {
       setKDDropdown(false);
-    }
-  };
-  const onKVMouseEnter = () => {
-    if (window.innerWidth < 1000) {
-      setKVDropdown(false);
-    } else {
-      setKVDropdown(true);
-    }
-  };
-  const onKVMouseLeave = () => {
-    if (window.innerWidth < 1000) {
-      setKVDropdown(false);
-    } else {
-      setKVDropdown(false);
-    }
-  };
-  const onKMEMouseEnter = () => {
-    if (window.innerWidth < 1000) {
-      setKMEDropdown(false);
-    } else {
-      setKMEDropdown(true);
-    }
-  };
-  const onKMEMouseLeave = () => {
-    if (window.innerWidth < 1000) {
-      setKMEDropdown(false);
-    } else {
-      setKMEDropdown(false);
     }
   };
 
@@ -116,7 +92,18 @@ export default function Navbar() {
                 >
                   Program Types
                 </NavLink>
-                {KDdropdown && <KD />}
+                {KDdropdown &&
+                  KDItems.map((item, index) => {
+                    return (
+                      <TestDropdown
+                        dropdown={KDdropdown}
+                        onMouseEnter={onKDMouseEnter}
+                        onMouseLeave={onKDMouseLeave}
+                        item={item}
+                        key={index}
+                      />
+                    );
+                  })}
               </li>
               <li onMouseEnter={onKEMouseEnter} onMouseLeave={onKEMouseLeave}>
                 <NavLink
@@ -223,7 +210,7 @@ export default function Navbar() {
                       <ul class="space-y-4">
                         <li>
                           <Link
-                            to="/"
+                            to="/undergrad"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -233,7 +220,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <Link
-                            to="/"
+                            to="/articles"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -243,7 +230,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <Link
-                            to="/"
+                            to="/scholarship"
                             aria-label="Product pricing"
                             title="Product pricing"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -253,7 +240,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <Link
-                            to="/"
+                            to="/scholar"
                             aria-label="About us"
                             title="About us"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"

@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
-import consult from "../images/consult.jpg";
-import emerging_market from "../images/emerging-market.jpg";
 import { HashLink as NLink } from "react-router-hash-link";
 
 const Section = styled.section`
@@ -151,7 +149,7 @@ const InfoSection = ({
             </Button>
           </ColumnLeftR>
           <ColumnRightR reverse={reverse}>
-            <img src={consult} alt="home" />
+            <img alt="home" />
           </ColumnRightR>
         </Container>
       </Section>
@@ -182,7 +180,7 @@ const InfoSection = ({
             </Button>
           </ColumnLeft>
           <ColumnRight reverse={reverse}>
-            <img src={emerging_market} alt="home" />
+            <img alt="home" />
           </ColumnRight>
         </Container>
       </Section>

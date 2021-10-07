@@ -11,6 +11,8 @@ import Blog from "./Components/Blog/Blog";
 import StudentGuide from "./Components/StudentGuide/StudentGuide";
 import Scholarship from "./Components/Scholarship/Scholarship";
 import Scholars from "./Components/Scholars/Scholars";
+import USA from "./Components/UnderGrad/Schools/USA/USA";
+import HowToApply from "./Components/UnderGrad/HowToApply/HowToApply";
 
 function App() {
   const [isOpen, setisOpen] = useState(false);
@@ -37,6 +39,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/undergrad" component={UnderGrad} />
+          <Route exact path="/undergrad/schools/usa" component={USA} />
+          <Route exact path="/undergrad/how-to-apply" component={HowToApply} />
           <Route exact path="/masters" component={Masters} />
           <Route exact path="/phd" component={Phd} />
           <Route exact path="/articles" component={Articles} />

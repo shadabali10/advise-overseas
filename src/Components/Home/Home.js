@@ -22,12 +22,14 @@ const Home = () => {
               <br class="hidden lg:inline-block" />
             </h1>
             <p class="mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-              fugiat iusto fuga praesentium optio, eaque rerum! Provident
-              similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-              eius earum ut molestias architecto voluptate aliquam
+              Study Abroad Programs give you the opportunity to experience the
+              world as your classroom. Rather than picking things up from books
+              and the Internet, navigating a new landscape may open your eyes to
+              culture, history, a new language or your heritage. Studying Abroad
+              opens the door to personal growth and discovery too. As you learn
+              to say ‘hello’ in a foreign language, make friends, eat exciting
+              new foods, it is bound to boost your confidence, teach you
+              self-reliance and stretch the parameters of your comfort zone.
             </p>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

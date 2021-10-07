@@ -23,22 +23,25 @@ function KEDropDown() {
       >
         {KEItems.map((item, index) => {
           return (
-            <li
-              key={index}
-              className="flex items-center px-3 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
-            >
-              <Link
-                className={item.cName}
-                to={item.path}
-                onClick={() => setClick(false)}
-                // onClick={() => setSubNav(!subnav)}
+            <>
+              <li
+                key={index}
+                className="flex items-center px-3 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
               >
-                {item.title}
-              </Link>
-              {/* {item.subNav.map((item, index) => {
+                <Link
+                  className={item.cName}
+                  to={item.path}
+                  onClick={() => setClick(false)}
+                  // onClick={() => setSubNav(!subnav)}
+                >
+                  {item.title}
+                </Link>
+                {/* {item.subNav.map((item, index) => {
                 return <SubNavigation key={index} item={item} />
               })} */}
-            </li>
+              </li>
+              <hr class="border-gray-200 dark:border-gray-700 " />
+            </>
           );
         })}
       </ul>
