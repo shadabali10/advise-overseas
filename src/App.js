@@ -13,6 +13,7 @@ import Scholarship from "./Components/Scholarship/Scholarship";
 import Scholars from "./Components/Scholars/Scholars";
 import USA from "./Components/UnderGrad/Schools/USA/USA";
 import HowToApply from "./Components/UnderGrad/HowToApply/HowToApply";
+import ProgramType from "./Components/ProgramType/ProgramType";
 
 function App() {
   const [isOpen, setisOpen] = useState(false);
@@ -38,6 +39,7 @@ function App() {
         <Navbar toggle={toggle} />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/programtype" component={ProgramType} />
           <Route exact path="/undergrad" component={UnderGrad} />
           <Route exact path="/undergrad/schools/usa" component={USA} />
           <Route exact path="/undergrad/how-to-apply" component={HowToApply} />

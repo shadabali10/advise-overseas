@@ -15,25 +15,10 @@ import TestDropdown from "./TestDropdown";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const [dropdown, setDropdown] = useState(false);
   const [KDdropdown, setKDDropdown] = useState(false);
 
   const [KEdropdown, setKEDropdown] = useState(false);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 1000) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-  const onMouseLeave = () => {
-    if (window.innerWidth < 1000) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
   const onKEMouseEnter = () => {
     if (window.innerWidth < 1000) {
       setKEDropdown(false);
@@ -51,7 +36,7 @@ export default function Navbar() {
 
   const onKDMouseEnter = () => {
     if (window.innerWidth < 1000) {
-      setKDDropdown(false);
+      setKDDropdown(true);
     } else {
       setKDDropdown(true);
     }
@@ -85,10 +70,10 @@ export default function Navbar() {
             <ul class="items-center hidden space-x-8 lg:flex">
               <li onMouseEnter={onKDMouseEnter} onMouseLeave={onKDMouseLeave}>
                 <NavLink
-                  to="/"
+                  to="/programtype"
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Program Types
                 </NavLink>
@@ -107,10 +92,8 @@ export default function Navbar() {
               </li>
               <li onMouseEnter={onKEMouseEnter} onMouseLeave={onKEMouseLeave}>
                 <NavLink
-                  to="/"
-                  aria-label="Our product"
-                  title="Our product"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  to="/resources"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Resources
                 </NavLink>
@@ -121,7 +104,7 @@ export default function Navbar() {
                   to="/scholarship"
                   aria-label="Product pricing"
                   title="Product pricing"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Scholarship
                 </Link>
@@ -131,7 +114,7 @@ export default function Navbar() {
                   to="/scholar"
                   aria-label="About us"
                   title="About us"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Scholars
                 </Link>
@@ -210,7 +193,7 @@ export default function Navbar() {
                       <ul class="space-y-4">
                         <li>
                           <Link
-                            to="/undergrad"
+                            to="/programtype"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
