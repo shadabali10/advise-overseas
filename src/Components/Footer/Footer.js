@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="grid grid-cols-12">
             <div className="pb-6 col-span-full md:pb-0 md:col-span-6">
               <NLink
-                to="#top"
+                to="/#top"
                 smooth
                 className="flex justify-center space-x-3 md:justify-start"
               >
@@ -89,7 +89,7 @@ const Footer = () => {
 
                 <li>
                   <NLink
-                    to="scholars#top"
+                    to="/scholar#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
