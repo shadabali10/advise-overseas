@@ -4,7 +4,7 @@ export const SliderData = [
   {
     title: "University of Pennsylvania",
     price: "Philadelphia",
-    path: "/undergrad",
+    path: "/programtype",
     label: "View More",
     image:
       "https://images.pexels.com/photos/6147369/pexels-photo-6147369.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -13,7 +13,7 @@ export const SliderData = [
   {
     title: "University of California",
     price: "Los Angeles",
-    path: "/masters",
+    path: "/programtype",
     label: "View More",
     image:
       "https://images.pexels.com/photos/8199159/pexels-photo-8199159.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -22,7 +22,7 @@ export const SliderData = [
   {
     title: "University of Oxford",
     price: "Oxford, Oxfordshire",
-    path: "/phd",
+    path: "/programtype",
     label: "View More",
     image:
       "https://images.pexels.com/photos/5676744/pexels-photo-5676744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -31,7 +31,7 @@ export const SliderData = [
   {
     title: "University of Glasgow",
     price: "Glasgow, Scotland",
-    path: "/undergrad",
+    path: "/programtype",
     label: "View More",
     image:
       "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
