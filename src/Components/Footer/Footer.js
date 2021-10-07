@@ -61,7 +61,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <NLink
-                    to="/real-estate#top"
+                    to="/programtype#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
@@ -70,7 +70,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NLink
-                    to="/hr-consultancy#top"
+                    to="/resources#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
@@ -79,25 +79,17 @@ const Footer = () => {
                 </li>
                 <li>
                   <NLink
-                    to="/emerging-markets#top"
+                    to="/scholarship#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
                     Scholarship
                   </NLink>
                 </li>
+
                 <li>
                   <NLink
-                    to="/softwares#top"
-                    smooth
-                    className="hover:dark:text-violet-400"
-                  >
-                    Softwares
-                  </NLink>
-                </li>
-                <li>
-                  <NLink
-                    to="careers#top"
+                    to="scholars#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
