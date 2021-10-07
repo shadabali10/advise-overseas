@@ -203,7 +203,7 @@ export default function Navbar() {
                         </li>
                         <li>
                           <Link
-                            to="/articles"
+                            to="/resources"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
