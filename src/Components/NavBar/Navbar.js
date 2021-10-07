@@ -36,7 +36,7 @@ export default function Navbar() {
 
   const onKDMouseEnter = () => {
     if (window.innerWidth < 1000) {
-      setKDDropdown(true);
+      setKDDropdown(false);
     } else {
       setKDDropdown(true);
     }
@@ -196,7 +196,7 @@ export default function Navbar() {
                             to="/programtype"
                             aria-label="Our product"
                             title="Our product"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium overflow-auto tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
                             Program Types
                           </Link>

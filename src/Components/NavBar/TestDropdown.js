@@ -48,8 +48,8 @@ function Dropdown({ dropdown }) {
         onClick={handleClick}
         className={
           click
-            ? "absolute right-72 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
-            : "absolute right-72 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
+            ? "absolute right-72 z-20 w-48 py-0 mt-0 bg-white rounded-md shadow-xl overflow-auto"
+            : "absolute right-72 z-20 w-48 py-0 mt-0 bg-white rounded-md shadow-xl overflow-auto"
         }
       >
         {MenuItems.map((item, index) => {
@@ -59,13 +59,13 @@ function Dropdown({ dropdown }) {
                 key={index}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                className="text-base items-center px-3 py-3  text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                className="text-base overflow-auto items-center px-3 py-0  text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
               >
                 <Link
                   className={item.cName}
                   to={item.path}
-                  onClick={() => setClick(false)}
-                  onClick={() => setSubNav(!subnav)}
+                  // onClick={() => setClick(false)}
+                  // onClick={() => setSubNav(!subnav)}
                 >
                   {item.title}
                 </Link>
