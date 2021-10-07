@@ -49,7 +49,7 @@ const ProgramType = () => {
                 <p className="text-md font-md leading-5">Documents</p>
               </Link>
               <Link
-                to="undergrad/howtoapply"
+                to="undergrad/how-to-apply"
                 className="flex items-center justify-items-center mt-6"
               >
                 <img
