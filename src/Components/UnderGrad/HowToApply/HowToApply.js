@@ -168,43 +168,43 @@ const HowToApply = () => {
             </div>
             <div className="flex items-center p-2 transition-colors duration-200 border rounded shadow group hover:bg-deep-purple-accent-400 hover:border-deep-purple-accent-400">
               <div className="mr-2"></div>
-              <span className="text-gray-800 transition-colors duration-200 group-hover:text-white">
+              <span className="text-gray-800 transition-colors duration-200 ">
                 Résumé/CV
               </span>
             </div>
             <div className="flex items-center p-2 transition-colors duration-200 border rounded shadow group hover:bg-deep-purple-accent-400 hover:border-deep-purple-accent-400">
               <div className="mr-2"></div>
-              <span className="text-gray-800 transition-colors duration-200 group-hover:text-white">
+              <span className="text-gray-800 transition-colors duration-200 ">
                 Test scores (SAT, ACT, GRE, GMAT)
               </span>
             </div>
             <div className="flex items-center p-2 transition-colors duration-200 border rounded shadow group hover:bg-deep-purple-accent-400 hover:border-deep-purple-accent-400">
               <div className="mr-2"></div>
-              <span className="text-gray-800 transition-colors duration-200 group-hover:text-white">
+              <span className="text-gray-800 transition-colors duration-200 ">
                 Proof of English-language proficiency
               </span>
             </div>
             <div className="flex items-center p-2 transition-colors duration-200 border rounded shadow group hover:bg-deep-purple-accent-400 hover:border-deep-purple-accent-400">
               <div className="mr-2"></div>
-              <span className="text-gray-800 transition-colors duration-200 group-hover:text-white">
+              <span className="text-gray-800 transition-colors duration-200 ">
                 Motivation letter or statement of purpose
               </span>
             </div>
             <div className="flex items-center p-2 transition-colors duration-200 border rounded shadow group hover:bg-deep-purple-accent-400 hover:border-deep-purple-accent-400">
               <div className="mr-2"></div>
-              <span className="text-gray-800 transition-colors duration-200 group-hover:text-white">
+              <span className="text-gray-800 transition-colors duration-200 ">
                 Application fee
               </span>
             </div>
             <div className="flex items-center p-2 transition-colors duration-200 border rounded shadow group hover:bg-deep-purple-accent-400 hover:border-deep-purple-accent-400">
               <div className="mr-2"></div>
-              <span className="text-gray-800 transition-colors duration-200 group-hover:text-white">
+              <span className="text-gray-800 transition-colors duration-200 ">
                 Writing sample
               </span>
             </div>
             <div className="flex items-center p-2 transition-colors duration-200 border rounded shadow group hover:bg-deep-purple-accent-400 hover:border-deep-purple-accent-400">
               <div className="mr-2"></div>
-              <span className="text-gray-800 transition-colors duration-200 group-hover:text-white">
+              <span className="text-gray-800 transition-colors duration-200 ">
                 Passport photo
               </span>
             </div>
