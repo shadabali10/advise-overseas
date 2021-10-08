@@ -86,7 +86,7 @@ const ProgramType = () => {
                   className="pr-5"
                   src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
                 />
-                <p className="text-md font-md leading-5">Schools: USA</p>
+                <p className="text-md font-md leading-5">Schools</p>
               </Link>
               <Link
                 to="undergrad/scholarships"
@@ -146,7 +146,7 @@ const ProgramType = () => {
                   className="pr-5"
                   src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
                 />
-                <p className="text-md font-md leading-5">Schools: USA</p>
+                <p className="text-md font-md leading-5">Schools</p>
               </Link>
               <Link
                 to="undergrad/scholarships"
