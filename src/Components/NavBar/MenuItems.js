@@ -83,7 +83,7 @@ export const MenuItems = [
     subNav: [
       {
         id: 11,
-        title: "Schools: USA",
+        title: "Schools",
         path: "/phd/schools/usa",
         cName: "subdropdown-link",
       },

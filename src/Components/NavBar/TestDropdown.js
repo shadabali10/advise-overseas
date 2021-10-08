@@ -7,7 +7,7 @@ import SubNavigation from "./SubNavigation";
 
 function Dropdown({ dropdown }) {
   const [click, setClick] = useState(false);
-  const [subnav, setSubNav] = useState(false);
+  const [subnav, setSubNav] = useState(true);
   const [Snav, setSNav] = useState(false);
   const [KDSubdropdown, setSubDropdown] = useState(false);
 
@@ -15,14 +15,10 @@ function Dropdown({ dropdown }) {
   const onMouseEnter = () => {
     if (window.innerWidth < 768) {
       setSubNav(false);
-    } else {
-      setSubNav(true);
     }
   };
   const onMouseLeave = () => {
     if (window.innerWidth < 768) {
-      setSubNav(false);
-    } else {
       setSubNav(false);
     }
   };
@@ -64,7 +60,7 @@ function Dropdown({ dropdown }) {
                 <Link
                   className={item.cName}
                   to={item.path}
-                  // onClick={() => setClick(false)}
+                  onClick={() => setClick(false)}
                   // onClick={() => setSubNav(!subnav)}
                 >
                   {item.title}
