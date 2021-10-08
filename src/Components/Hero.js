@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaSlidersH } from "react-icons/fa";
+import { HashLink as NLink } from "react-router-hash-link";
 import styled, { css } from "styled-components/macro";
 import { Button } from "./Button";
 import { IoMdArrowRoundForward } from "react-icons/io";
@@ -179,6 +180,7 @@ const Hero = ({ slides }) => {
                   <HeroContent>
                     <h1>{slide.title}</h1>
                     <p> {slide.price} </p>
+
                     <Button
                       to={slide.path}
                       primary="true"
@@ -187,6 +189,7 @@ const Hero = ({ slides }) => {
                       `}
                     >
                       {slide.label}
+
                       <Arrow />
                     </Button>
                   </HeroContent>

@@ -11,6 +11,7 @@ import { MenuItems } from "./MenuItems";
 import { KDItems } from "./KDItems";
 import { KDSub } from "./KDSub";
 import TestDropdown from "./TestDropdown";
+import { HashLink as NLink } from "react-router-hash-link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,8 +58,9 @@ export default function Navbar() {
       <div class="bg-gray-900 sticky fixingnav top-0">
         <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
-            <Link
-              to="/"
+            <NLink
+              to="/#top"
+              smooth
               aria-label="Company"
               title="Company"
               class="inline-flex items-center"
@@ -66,7 +68,7 @@ export default function Navbar() {
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                 Study Abroad
               </span>
-            </Link>
+            </NLink>
             <ul class="items-center hidden space-x-8 lg:flex">
               <li onMouseEnter={onKDMouseEnter} onMouseLeave={onKDMouseLeave}>
                 <NavLink

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import "./navbarstyle.css";
 import SubNavigation from "./SubNavigation";
+import { HashLink as NLink } from "react-router-hash-link";
 
 function Dropdown({ dropdown }) {
   const [click, setClick] = useState(false);
@@ -57,14 +58,14 @@ function Dropdown({ dropdown }) {
                 onMouseLeave={onMouseLeave}
                 className="text-base overflow-auto items-center px-3 py-0  text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
               >
-                <Link
+                <NLink
                   className={item.cName}
-                  to={item.path}
+                  to={`${item.path}#top`}
                   onClick={() => setClick(false)}
                   // onClick={() => setSubNav(!subnav)}
                 >
                   {item.title}
-                </Link>
+                </NLink>
                 {subnav &&
                   item.subNav.map((item, index) => {
                     return (
