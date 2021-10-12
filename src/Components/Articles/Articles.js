@@ -6,7 +6,7 @@ const Articles = () => {
       <div class="container px-6 py-16 mx-auto text-center">
         <div class="max-w-lg mx-auto">
           <h1 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">
-            Articles
+            Scholarship Blog
           </h1>
           <p class="mt-6 text-gray-500 dark:text-gray-300">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero

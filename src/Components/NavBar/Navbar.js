@@ -79,18 +79,7 @@ export default function Navbar() {
                 >
                   Program Types
                 </NavLink>
-                {KDdropdown &&
-                  KDItems.map((item, index) => {
-                    return (
-                      <TestDropdown
-                        dropdown={KDdropdown}
-                        onMouseEnter={onKDMouseEnter}
-                        onMouseLeave={onKDMouseLeave}
-                        item={item}
-                        key={index}
-                      />
-                    );
-                  })}
+                {KDdropdown && <KD />}
               </li>
               <li onMouseEnter={onKEMouseEnter} onMouseLeave={onKEMouseLeave}>
                 <NavLink
@@ -113,12 +102,12 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/scholar"
+                  to="/contact"
                   aria-label="About us"
                   title="About us"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-                  Scholars
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -225,12 +214,12 @@ export default function Navbar() {
                         </li>
                         <li>
                           <Link
-                            to="/scholar"
-                            aria-label="About us"
+                            to="/contact"
+                            aria-label="Contact Us"
                             title="About us"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Scholars
+                            Contact
                           </Link>
                         </li>
                       </ul>

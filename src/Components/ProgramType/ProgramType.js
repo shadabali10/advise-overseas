@@ -16,183 +16,33 @@ const ProgramType = () => {
             <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex"></div>
             <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
               <div className="flex items-center justify-between mb-2">
-                <p className="text-lg font-bold leading-5">UNDERGRADUATE</p>
+                <p className="text-lg font-bold leading-5">
+                  <Link to="/undergrad">UNDERGRADUATE</Link>
+                </p>
                 <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
                   1
                 </p>
               </div>
-              <Link
-                to="undergrad/schools/usa"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Schools: USA</p>
-              </Link>
-              <Link
-                to="undergrad/scholarships"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Scholarships</p>
-              </Link>
-              <Link
-                to="undergrad/documents"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Documents</p>
-              </Link>
-              <Link
-                to="undergrad/how-to-apply"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">How To Apply</p>
-              </Link>
-              <Link
-                to="undergrad/bsfi"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">
-                  Best Schools For International Applicants
-                </p>
-              </Link>
             </div>
             <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
               <div className="flex items-center justify-between mb-2">
-                <p className="text-lg font-bold leading-5">MASTERS</p>
+                <p className="text-lg font-bold leading-5">
+                  <Link to="/masters">MASTERS</Link>
+                </p>
                 <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
                   2
                 </p>
               </div>
-              <Link
-                to="undergrad/schools/usa"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Schools</p>
-              </Link>
-              <Link
-                to="undergrad/scholarships"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Scholarships</p>
-              </Link>
-              <Link
-                to="undergrad/documents"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Documents</p>
-              </Link>
-              <Link
-                to="undergrad/howtoapply"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">How To Apply</p>
-              </Link>
-              <Link
-                to="undergrad/bsfi"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">
-                  Best Schools For International Applicants
-                </p>
-              </Link>
             </div>
             <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
               <div className="flex items-center justify-between mb-2">
-                <p className="text-lg font-bold leading-5">PHD</p>
+                <p className="text-lg font-bold leading-5">
+                  <Link to="phd">PHD</Link>
+                </p>
                 <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
                   3
                 </p>
               </div>
-              <Link
-                to="undergrad/schools/usa"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Schools</p>
-              </Link>
-              <Link
-                to="undergrad/scholarships"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Scholarships</p>
-              </Link>
-              <Link
-                to="undergrad/documents"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Documents</p>
-              </Link>
-              <Link
-                to="undergrad/howtoapply"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">How To Apply</p>
-              </Link>
-              <Link
-                to="undergrad/bsfi"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">
-                  Best Schools For International Applicants
-                </p>
-              </Link>
             </div>
           </div>
         </div>

@@ -11,10 +11,18 @@ import Blog from "./Components/Blog/Blog";
 import StudentGuide from "./Components/StudentGuide/StudentGuide";
 import Scholarship from "./Components/Scholarship/Scholarship";
 import Scholars from "./Components/Scholars/Scholars";
-import USA from "./Components/UnderGrad/Schools/USA/USA";
+import USA from "./Components/Schools/USA/USA";
 import HowToApply from "./Components/UnderGrad/HowToApply/HowToApply";
 import ProgramType from "./Components/ProgramType/ProgramType";
 import Resources from "./Components/Resources/Resources";
+import { CommentAction } from "semantic-ui-react";
+import Contact from "./Components/contact/Contact";
+import UK from "./Components/Schools/UK/UK";
+import EUROPE from "./Components/Schools/EUROPE/EUROPE";
+import MIDEAST from "./Components/Schools/MIDEAST/MIDEAST";
+import CANADA from "./Components/Schools/CANADA/CANADA";
+import ASIA from "./Components/Schools/ASIA/ASIA";
+import Documents from "./Components/Documents/Documents";
 
 function App() {
   const [isOpen, setisOpen] = useState(false);
@@ -42,16 +50,23 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/programtype" component={ProgramType} />
           <Route exact path="/undergrad" component={UnderGrad} />
-          <Route exact path="/undergrad/schools/usa" component={USA} />
-          <Route exact path="/undergrad/how-to-apply" component={HowToApply} />
+          <Route exact path="/usa" component={USA} />
+          <Route exact path="/uk" component={UK} />
+          <Route exact path="/europe" component={EUROPE} />
+          <Route exact path="/canada" component={CANADA} />
+          <Route exact path="/asia" component={ASIA} />
+          <Route exact path="/mideast" component={MIDEAST} />
+          <Route exact path="/how-to-apply" component={HowToApply} />
+          <Route exact path="/documents" component={Documents} />
           <Route exact path="/masters" component={Masters} />
           <Route exact path="/resources" component={Resources} />
           <Route exact path="/phd" component={Phd} />
           <Route exact path="/articles" component={Articles} />
           <Route exact path="/blogs" component={Blog} />
           <Route exact path="/student-guide" component={StudentGuide} />
-          <Route exact path="/scholarship" component={Scholarship} />
+          <Route exact path="/scholarship" component={Articles} />
           <Route exact path="/scholar" component={Scholars} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
         <Footer />
       </BrowserRouter>

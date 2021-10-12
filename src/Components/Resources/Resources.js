@@ -13,51 +13,33 @@ const Resources = () => {
             <div className="absolute inset-0 flex items-center justify-center sm:hidden lg:flex"></div>
             <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
               <div className="flex items-center justify-between mb-2">
-                <p className="text-lg font-bold leading-5">UNDERGRADUATE</p>
+                <p className="text-lg font-bold leading-5">
+                  <Link to="/how-to-apply"> How To Apply</Link>
+                </p>
                 <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
                   1
                 </p>
               </div>
-              <Link
-                to="articles"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Articles</p>
-              </Link>
-              <Link
-                to="blogs"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Blogs</p>
-              </Link>
-              <Link
-                to="student-guide"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Student Guide</p>
-              </Link>
-              <Link
-                to="undergrad/materials"
-                className="flex items-center justify-items-center mt-6"
-              >
-                <img
-                  className="pr-5"
-                  src="https://img.icons8.com/material-outlined/24/000000/plus--v1.png"
-                />
-                <p className="text-md font-md leading-5">Materials</p>
-              </Link>
+            </div>
+            <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-lg font-bold leading-5">
+                  <Link to="/documents">Documents</Link>
+                </p>
+                <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
+                  2
+                </p>
+              </div>
+            </div>
+            <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-lg font-bold leading-5">
+                  <Link to="/materials">Materials</Link>
+                </p>
+                <p className="flex items-center justify-center w-6 h-6 font-bold rounded text-deep-purple-accent-400 bg-indigo-50">
+                  3
+                </p>
+              </div>
             </div>
           </div>
         </div>

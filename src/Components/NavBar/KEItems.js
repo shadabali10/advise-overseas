@@ -1,17 +1,12 @@
 export const KEItems = [
   {
-    title: "ARTICLES",
-    path: "/articles",
+    title: "HOW TO APPLY",
+    path: "/how-to-apply",
     cName: "dropdown-link  font-bold",
   },
   {
-    title: "BLOGS",
-    path: "/blogs",
-    cName: "dropdown-link  font-bold",
-  },
-  {
-    title: "STUDENT GUIDE",
-    path: "/student-guide",
+    title: "DOCUMENTS",
+    path: "/documents",
     cName: "dropdown-link  font-bold",
   },
   {

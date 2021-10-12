@@ -3,24 +3,16 @@ export const KDItems = [
   {
     title: "UNDERGRADUATE",
     path: "/undergrad",
-    cName: "dropdown-link",
+    cName: "dropdown-link font-bold",
   },
   {
     title: "MASTERS",
     path: "masters",
-    cName: "dropdown-link",
+    cName: "dropdown-link font-bold",
   },
   {
     title: "PHD",
     path: "phd",
-    cName: "dropdown-link",
-    subNav: [
-      {
-        id: 11,
-        title: "Gallery",
-        path: "/boobiekatz/gallery",
-        cName: "subdropdown-link",
-      },
-    ],
+    cName: "dropdown-link font-bold",
   },
 ];

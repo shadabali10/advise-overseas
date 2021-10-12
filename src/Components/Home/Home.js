@@ -5,11 +5,37 @@ import InfoSection from "../InfoSection";
 import { InfoData } from "../data/InfoData";
 import { SliderData } from "../data/SliderData";
 import GlobalStyle from "../globalStyles";
+import { useHistory } from "react-router-dom";
 
 const Home = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
+  let history = useHistory();
+
+  function clickUSA() {
+    history.push("/usa");
+  }
+
+  function clickUK() {
+    history.push("/uk");
+  }
+
+  function clickEUROPE() {
+    history.push("/europe");
+  }
+
+  function clickCANADA() {
+    history.push("/canada");
+  }
+
+  function clickASIA() {
+    history.push("/asia");
+  }
+
+  function clickMIDEAST() {
+    history.push("/mideast");
+  }
   return (
     <>
       <Hero slides={SliderData} />
@@ -48,8 +74,9 @@ const Home = () => {
               PLAN YOU ACADEMIC FUTURE ABROAD
             </h1>
             <p class="mt-6 text-gray-500 dark:text-gray-300">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-              similique obcaecati illum mollitia.
+              We provide you with everything from advice on choosing a study
+              destination, to guidance on applying for scholarships, and useful
+              information for international students.
             </p>
           </div>
 
@@ -93,11 +120,11 @@ const Home = () => {
               Turn your study abroad dream into reality
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-              Here are the various countries we help you to get into
+              Here are the various countries we help you get into
             </p>
           </div>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-            <div>
+            <div onClick={clickUSA}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -109,7 +136,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div onClick={clickUK}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -121,7 +148,19 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <div onClick={clickCANADA}>
+              <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                <img
+                  className="object-cover w-full h-56 md:h-64 xl:h-80"
+                  src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F874837640%2FUrban-skyline-including-the-CN-Tower--point-of-view-from---%2F960x0.jpg%3Ffit%3Dscale"
+                  alt="Person"
+                />
+                <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                  <p className="mb-1 text-lg font-bold text-gray-100">Canada</p>
+                </div>
+              </div>
+            </div>
+            <div onClick={clickEUROPE}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -133,31 +172,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
-                <img
-                  className="object-cover w-full h-56 md:h-64 xl:h-80"
-                  src="https://images.unsplash.com/photo-1540820658620-e933c0ec78aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1316&q=80"
-                  alt="Person"
-                />
-                <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                  <p className="mb-1 text-lg font-bold text-gray-100">China</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
-                <img
-                  className="object-cover w-full h-56 md:h-64 xl:h-80"
-                  src="https://media.istockphoto.com/photos/female-student-at-university-campus-picture-id1138730126?b=1&k=20&m=1138730126&s=170667a&w=0&h=jtmC0vOAGoRnpFoeKj8HDRfy2xBIujI58vwzsszdCdI="
-                  alt="Person"
-                />
-                <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                  <p className="mb-1 text-lg font-bold text-gray-100">Africa</p>
-                </div>
-              </div>
-            </div>
-            <div>
+            <div onClick={clickMIDEAST}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -168,6 +183,18 @@ const Home = () => {
                   <p className="mb-1 text-lg font-bold text-gray-100">
                     Middle-East
                   </p>
+                </div>
+              </div>
+            </div>
+            <div onClick={clickASIA}>
+              <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+                <img
+                  className="object-cover w-full h-56 md:h-64 xl:h-80"
+                  src="https://images.unsplash.com/photo-1540820658620-e933c0ec78aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1316&q=80"
+                  alt="Person"
+                />
+                <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                  <p className="mb-1 text-lg font-bold text-gray-100">Asia</p>
                 </div>
               </div>
             </div>

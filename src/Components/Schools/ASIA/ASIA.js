@@ -1,6 +1,6 @@
 import React from "react";
 
-const USA = () => {
+const ASIA = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -12,7 +12,7 @@ const USA = () => {
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400"></p>
           </div>
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-            USA Universities
+            Asia Universities
           </h2>
         </div>
         <hr />
@@ -41,7 +41,7 @@ const USA = () => {
                       Acceptance Rate
                     </th>
                     <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                      ACT/SAT
+                      Website
                     </th>
                   </tr>
                 </thead>
@@ -247,4 +247,4 @@ const USA = () => {
   );
 };
 
-export default USA;
+export default ASIA;
