@@ -93,8 +93,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to="/scholarship"
-                  aria-label="Product pricing"
-                  title="Product pricing"
+                  title=""
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Scholarship
@@ -103,8 +102,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to="/contact"
-                  aria-label="About us"
-                  title="About us"
+                  title=""
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
                   Contact

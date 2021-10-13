@@ -119,7 +119,7 @@ function Contact() {
               </a>
 
               <a
-                href="mailemail:sammedsani@gmail.com"
+                href="mailto:sammedsani@gmail.com"
                 className="flex flex-col items-center cursor-pointer px-4 py-4 text-black rounded-md dark:text-gray-800 hover:bg-black hover:text-white dark:hover:bg-blue-500"
               >
                 <svg
