@@ -88,7 +88,7 @@ const Footer = () => {
 
                 <li>
                   <NLink
-                    to="/scholar#top"
+                    to="/contact#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
