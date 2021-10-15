@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import { useHistory } from "react-router-dom";
 
 const UnderGrad = () => {
-  const scrollToTop = () => {
+  React.useEffect(() => {
     window.scrollTo(0, 0);
-  };
+  }, []);
 
   let history = useHistory();
 

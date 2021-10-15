@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router";
 
 const Masters = () => {
-  const scrollToTop = () => {
+  React.useEffect(() => {
     window.scrollTo(0, 0);
-  };
+  }, []);
   let history = useHistory();
 
   function clickUSA() {

@@ -23,6 +23,7 @@ import MIDEAST from "./Components/Schools/MIDEAST/MIDEAST";
 import CANADA from "./Components/Schools/CANADA/CANADA";
 import ASIA from "./Components/Schools/ASIA/ASIA";
 import Documents from "./Components/Documents/Documents";
+import Test from "./Components/Test";
 
 function App() {
   const [isOpen, setisOpen] = useState(false);
@@ -67,6 +68,7 @@ function App() {
           <Route exact path="/scholarship" component={Articles} />
           <Route exact path="/scholar" component={Scholars} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/test" component={Test} />
         </Switch>
         <Footer />
       </BrowserRouter>

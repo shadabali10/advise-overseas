@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import firebase from "../../../Firebase";
+import { Link } from "react-scroll";
 
 const UK = () => {
+  const ref = firebase.firestore().collection("UK");
+  console.log(ref);
+
+  const [data, setdata] = useState([]);
+  const [loader, setloader] = useState(true);
+
+  function getData() {
+    ref.onSnapshot((querySnapshot) => {
+      const items = [];
+      querySnapshot.forEach((doc) => {
+        items.push(doc.data());
+      });
+      setdata(items);
+      setloader(false);
+    });
+  }
+
+  useEffect(() => {
+    getData();
+    console.log(data);
+  }, []);
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -47,196 +71,26 @@ const UK = () => {
                 </thead>
 
                 <tbody>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 ">
-                      Massachusetts Institute of Technology
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 ">
-                      Cambridge, MA
-                    </td>
-                    <td class="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      12321
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
-                      6.7
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
-                      35 (C) / 750 (R), 790 (M)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700">
-                      Harvard University
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      Cambridge, MA
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      41987
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      4.6
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      34 (C) / 740 (R), 775 (M)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700">
-                      Stanford University
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      Stanford, CA
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      20993
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      4.3
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      33 (C) / 735 (R), 770 (M)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700">
-                      University of California- Berkeley
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      Berkeley, CA
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      45183
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      16.3{" "}
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      33 (C) / 695 (R), 735 (M)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700">
-                      California Institute of Technology
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      Pasadena, CA
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      2334
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      6.4
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      35 (C) / 750 (R), 795 (M)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700">
-                      University of California- Los Angeles
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      Los Angeles, CA
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      47103
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      12.3
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      32 (C) / 695 (R), 720 (M)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700">
-                      Yale University
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      New Haven, CT
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      12385
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      6.7
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      33 (C) / 760 (R), 755 (M)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700">
-                      Georgia Institute of Technology-Main Campus
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      Atlanta, GA
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      38951
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      20.6
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      31 (C) / 680 (R), 725 (M)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700">
-                      University of Illinois at Urbana-Champaign
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      Champaign, IL
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      54985
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      59.0
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      29 (C) / 650 (R), 690 (M)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700">
-                      Cornell University
-                    </th>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      Ithaca, NY
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      24189
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      10.9
-                    </td>
-                    <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                      <i class="fas fa-arrow-down text-orange-500 mr-4"></i>
-                      33 (C) / 720 (R), 760 (M)
-                    </td>
-                  </tr>
+                  {loader === false &&
+                    data.map((dev) => (
+                      <tr key={dev.id}>
+                        <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700 ">
+                          {dev.university}
+                        </th>
+                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 ">
+                          {dev.city}
+                        </td>
+                        <td class="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                          {dev.students}
+                        </td>
+                        <td class="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                          {dev.acceptance}
+                        </td>
+                        <td class="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                          <a href={dev.website}>{dev.website}</a>
+                        </td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </div>
