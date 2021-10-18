@@ -16,8 +16,8 @@ function KEDropDown() {
         onClick={handleClick}
         className={
           click
-            ? "absolute right-36 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
-            : "absolute right-36 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
+            ? "absolute right-9 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
+            : "absolute right-9 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
         }
         // className="dropdown-menu"
       >

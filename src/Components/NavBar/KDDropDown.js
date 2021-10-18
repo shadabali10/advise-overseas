@@ -50,8 +50,8 @@ function KDDropdown() {
         onClick={handleClick}
         className={
           click
-            ? "absolute right-72 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
-            : "absolute right-72 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
+            ? "absolute right-40 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
+            : "absolute right-40 z-20 w-48 py-2 mt-0 bg-white rounded-md shadow-xl"
         }
         // className="dropdown-menu"
       >
