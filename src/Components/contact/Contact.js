@@ -28,13 +28,16 @@ function Contact() {
     }
     e.preventDefault();
     axios
-      .post("https://technotask-demo.herokuapp.com/api/postcontactmail", {
-        name,
-        email,
-        subject,
-        reason,
-        mailBody,
-      })
+      .post(
+        "https://study-abroad-nodemailer.herokuapp.com/api/postcontactmail",
+        {
+          name,
+          email,
+          subject,
+          reason,
+          mailBody,
+        }
+      )
       .catch((err) => console.log(err));
     swal({
       title: "Email Sent Successfully!",
@@ -242,21 +245,24 @@ function Contact() {
                       type="reason"
                       name="reason"
                     >
-                      <option className="text-center" value="Business Enquiry">
+                      <option className="text-center" value="General Enquiry">
                         General Enquiry
                       </option>
-                      <option className="text-center" value="HR Assistance">
+                      <option
+                        className="text-center"
+                        value=" Study Aboard Programs Related Enquiry"
+                      >
                         Study Aboard Programs Related Enquiry
                       </option>
                       <option
                         className="text-center"
-                        value="I want to Work for TechnoTask"
+                        value="I want to enquire about Scholarships"
                       >
                         I want to enquire about Scholarships
                       </option>
                       <option
                         className="text-center"
-                        value="I am an industry expert/analyst and want to get in touch with TechnoTask"
+                        value="I want to enquire about the documents required"
                       >
                         I want to enquire about the documents required
                       </option>
