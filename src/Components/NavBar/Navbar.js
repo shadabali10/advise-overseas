@@ -90,15 +90,7 @@ export default function Navbar() {
                 </NavLink>
                 {KEdropdown && <KE />}
               </li>
-              <li>
-                <Link
-                  to="/scholarship"
-                  title=""
-                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                >
-                  Scholarship
-                </Link>
-              </li>
+
               <li>
                 <Link
                   to="/contact"
@@ -200,16 +192,7 @@ export default function Navbar() {
                             Resources
                           </Link>
                         </li>
-                        <li>
-                          <Link
-                            to="/scholarship"
-                            aria-label="Product pricing"
-                            title="Product pricing"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Scholarship
-                          </Link>
-                        </li>
+
                         <li>
                           <Link
                             to="/contact"
