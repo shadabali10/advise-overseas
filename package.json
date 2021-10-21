@@ -1,6 +1,7 @@
 {
   "name": "study_abroad",
   "version": "0.1.0",
+  "homepage": "http://scholarshipaccessproject.com",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.3.0",
