@@ -28,7 +28,7 @@ const Articles = () => {
               Product
             </span>
             <a
-              href="#"
+              href="/"
               class="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline"
             >
               My Journey
@@ -50,7 +50,7 @@ const Articles = () => {
                   alt="Avatar"
                 />
                 <a
-                  href="#"
+                  href="/"
                   class="mx-2 font-semibold text-gray-700 dark:text-gray-200"
                 >
                   Jone Doe
@@ -76,7 +76,7 @@ const Articles = () => {
               Product
             </span>
             <a
-              href="#"
+              href="/"
               class="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline"
             >
               My Journey
@@ -98,7 +98,7 @@ const Articles = () => {
                   alt="Avatar"
                 />
                 <a
-                  href="#"
+                  href="/"
                   class="mx-2 font-semibold text-gray-700 dark:text-gray-200"
                 >
                   Jone Doe
