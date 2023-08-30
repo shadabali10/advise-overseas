@@ -14,3 +14,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+.overseasLogo{
+  height: 100px;
+  width: 150px;
+}
+
+.overseasLogo img{
+    height: 100%;
+    width: 100%;
+}
+
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(21, 52, 119, var(--tw-bg-opacity));
+}
+
+.py-8 {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}

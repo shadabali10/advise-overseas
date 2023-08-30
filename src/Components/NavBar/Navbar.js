@@ -12,7 +12,7 @@ import { KDItems } from "./KDItems";
 import { KDSub } from "./KDSub";
 import TestDropdown from "./TestDropdown";
 import { HashLink as NLink } from "react-router-hash-link";
-
+import overseasLogo from "../../images/advise-overseas-logo.jpeg"
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -66,7 +66,7 @@ export default function Navbar() {
               class="inline-flex items-center"
             >
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                Study Abroad
+               <div className="overseasLogo"><img src={overseasLogo} ></img></div> 
               </span>
             </NLink>
             <ul class="items-center hidden space-x-8 lg:flex">
@@ -90,7 +90,12 @@ export default function Navbar() {
                 </NavLink>
                 {KEdropdown && <KE />}
               </li>
-
+              <NavLink
+                  to="/resources"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Scholarships
+                </NavLink>
               <li>
                 <Link
                   to="/contact"
@@ -144,10 +149,10 @@ export default function Navbar() {
                             stroke="currentColor"
                             fill="none"
                           >
-                            <rect x="3" y="1" width="7" height="12" />
+                            {/* <rect x="3" y="1" width="7" height="12" />
                             <rect x="3" y="17" width="7" height="6" />
                             <rect x="14" y="1" width="7" height="6" />
-                            <rect x="14" y="11" width="7" height="12" />
+                            <rect x="14" y="11" width="7" height="12" /> */}
                           </svg>
                           <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Study Abroad

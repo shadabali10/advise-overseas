@@ -21,19 +21,25 @@ export const MenuItems = [
     subNav: [],
   },
 
-  //   {
-  //     title: "Reputation Management",
-  //     path: "/services/reputation-management",
-  //     cName: "dropdown-link",
-  //   },
-  //   {
-  //     title: "Finance and Accounting",
-  //     path: "/services/finance-and-accounting",
-  //     cName: "dropdown-link",
-  //   },
-  //   {
-  //     title: "Sales",
-  //     path: "/services/sales",
-  //     cName: "dropdown-link",
-  //   },
+    {
+      id: 4,
+      title: "Reputation Management",
+      path: "/services/reputation-management",
+      cName: "dropdown-link",
+      subNav: [],
+    },
+    {
+      id: 5,
+      title: "Finance and Accounting",
+      path: "/services/finance-and-accounting",
+      cName: "dropdown-link",
+      subNav: [],
+    },
+    {
+      id: 6,
+      title: "Sales",
+      path: "/services/sales",
+      cName: "dropdown-link",
+      subNav: [],
+    },
 ];
