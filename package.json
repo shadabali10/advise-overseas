@@ -1,7 +1,7 @@
 {
   "name": "Advise Overseas",
   "version": "0.1.0",
-  "homepage": "https://scholarshipaccessproject.com",
+  "homepage": "https://adviseoverseas.com",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.3.0",
