@@ -26,16 +26,16 @@ const Insurance = () => {
       que: "Online Reviews and Forums",
       ans: "Obtaining positive customer reviews on relevant sites and forums, and suppressing negative results.",
     },
-    // {
-    //   id: 5,
-    //   que: "Data Subject Request",
-    //   ans: "Modern privacy regulations grant consumers broad rights to the personal data that enterprises collect from them and about them. Depending upon their location, consumers can request access to their data, request that an organization stop processing it, or request it be deleted. Enterprises must fulfill such requests promptly, with only a few exceptions allowed for legal reasons. Each request from a consumer can translate into large numbers of often ill-defined tasks that you must perform inside your company.",
-    // },
-    // {
-    //   id: 6,
-    //   que: "Privacy By Design",
-    //   ans: "Privacy by Design is a framework based on proactively embedding privacy into the design and operation of IT systems, networked infrastructure, and business practices",
-    // },
+    {
+      id: 5,
+      que: "Data Subject Request",
+      ans: "Modern privacy regulations grant consumers broad rights to the personal data that enterprises collect from them and about them. Depending upon their location, consumers can request access to their data, request that an organization stop processing it, or request it be deleted. Enterprises must fulfill such requests promptly, with only a few exceptions allowed for legal reasons. Each request from a consumer can translate into large numbers of often ill-defined tasks that you must perform inside your company.",
+    },
+    {
+      id: 6,
+      que: "Privacy By Design",
+      ans: "Privacy by Design is a framework based on proactively embedding privacy into the design and operation of IT systems, networked infrastructure, and business practices",
+    },
   ];
 
   return (
@@ -49,12 +49,12 @@ const Insurance = () => {
         <div className="flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-50">
           <div className="text-center">
             <h1 className="text-2xl font-semibold text-black uppercase lg:text-3xl cursor-pointer">
-              {/* Network <span className="text-blue-400 underline">Saas</span> */}
-              {/* Data Privacy */}
+              Network <span className="text-blue-400 underline">Saas</span>
+              Data Privacy
             </h1>
-            {/* <button className="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+            <button className="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
               Start project
-            </button> */}
+            </button>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ const Insurance = () => {
           accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
           molestias architecto voluptate aliquam
         </div>
-        {/* <div className="md:text-xl text-black">
+        <div className="md:text-xl text-black">
           Our skilled Data Privacy consultants will help you in designing a
           global privacy framework based on the initial gap assessment. We
           assist in improving the privacy posture by providing an expert
@@ -80,7 +80,7 @@ const Insurance = () => {
           its easier with us to automate privacy impact assessments or to
           discover personal data from any system within or outside the
           organization.
-        </div> */}
+        </div>
 
         <div className="md:text-4xl text-xl pt-12 text-center font-bold">
           Solutions
@@ -132,7 +132,7 @@ const Insurance = () => {
           </div>
         </div>
 
-        {/* <div className="flex lg:flex-wrap flex-wrap-reverse align-middle justify-center items-center">
+        <div className="flex lg:flex-wrap flex-wrap-reverse align-middle justify-center items-center">
           <div className="md:w-1/2 w-full items-center align-middle">
             <img src="/assets/images/problems1.jpg" alt="Network Security" />
           </div>
@@ -179,9 +179,9 @@ const Insurance = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className="md:text-4xl text-xl pt-12 text-center font-bold">
+        <div className="md:text-4xl text-xl pt-12 text-center font-bold">
           Solutions
         </div>
         <hr className="h-px my-6 bg-gray-900 border-none dark:bg-gray-700 md:mx-24 mx-8" />
@@ -189,7 +189,7 @@ const Insurance = () => {
           {faqdata.map((item) => (
             <Faq key={item.id} que={item.que} ans={item.ans} />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );
