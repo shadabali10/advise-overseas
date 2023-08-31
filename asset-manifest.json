@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/shadabali10/advise-overseas.git/static/css/main.99972159.chunk.css",
+    "main.js": "/shadabali10/advise-overseas.git/static/js/main.9be4892f.chunk.js",
+    "main.js.map": "/shadabali10/advise-overseas.git/static/js/main.9be4892f.chunk.js.map",
+    "runtime-main.js": "/shadabali10/advise-overseas.git/static/js/runtime-main.f824fdb4.js",
+    "runtime-main.js.map": "/shadabali10/advise-overseas.git/static/js/runtime-main.f824fdb4.js.map",
+    "static/js/2.d76817ed.chunk.js": "/shadabali10/advise-overseas.git/static/js/2.d76817ed.chunk.js",
+    "static/js/2.d76817ed.chunk.js.map": "/shadabali10/advise-overseas.git/static/js/2.d76817ed.chunk.js.map",
+    "index.html": "/shadabali10/advise-overseas.git/index.html",
+    "static/css/main.99972159.chunk.css.map": "/shadabali10/advise-overseas.git/static/css/main.99972159.chunk.css.map",
+    "static/js/2.d76817ed.chunk.js.LICENSE.txt": "/shadabali10/advise-overseas.git/static/js/2.d76817ed.chunk.js.LICENSE.txt",
+    "static/media/ImageOne.2231ea59.jpeg": "/shadabali10/advise-overseas.git/static/media/ImageOne.2231ea59.jpeg",
+    "static/media/advise-overseas-logo.f68a1274.jpeg": "/shadabali10/advise-overseas.git/static/media/advise-overseas-logo.f68a1274.jpeg",
+    "static/media/home.94eb526a.png": "/shadabali10/advise-overseas.git/static/media/home.94eb526a.png",
+    "static/media/interior1.19402a26.jpg": "/shadabali10/advise-overseas.git/static/media/interior1.19402a26.jpg",
+    "static/media/interior2.555aed37.jpg": "/shadabali10/advise-overseas.git/static/media/interior2.555aed37.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f824fdb4.js",
+    "static/js/2.d76817ed.chunk.js",
+    "static/css/main.99972159.chunk.css",
+    "static/js/main.9be4892f.chunk.js"
+  ]
+}
