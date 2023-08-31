@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
-import { Link } from "react-scroll";
+// import React, { useEffect } from "react";
+import React from "react"
+// import { Link } from "react-scroll";
 import { useHistory } from "react-router-dom";
 
 const UnderGrad = () => {

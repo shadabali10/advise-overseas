@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import homeimg from "../../images/home.png";
 import Hero from "../Hero";
-import InfoSection from "../InfoSection";
-import { InfoData } from "../data/InfoData";
+// import InfoSection from "../InfoSection";
+// import { InfoData } from "../data/InfoData";
 import { SliderData } from "../data/SliderData";
-import GlobalStyle from "../globalStyles";
+// import GlobalStyle from "../globalStyles";
 import { useHistory } from "react-router-dom";
 
 const Home = () => {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo(0, 0);
+  // };
   let history = useHistory();
 
   function clickUSA() {

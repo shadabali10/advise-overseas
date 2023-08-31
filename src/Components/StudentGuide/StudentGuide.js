@@ -1,9 +1,9 @@
 import React from "react";
 
 const StudentGuide = () => {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo(0, 0);
+  // };
   return (
     <>
       <div class="container px-6 py-16 mx-auto text-center">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import firebase from "../Firebase";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const Test = () => {
   const ref = firebase.firestore().collection("USA");
@@ -23,6 +23,7 @@ const Test = () => {
   useEffect(() => {
     getData();
     console.log(data);
+     // eslint-disable-next-line
   }, []);
 
   return (

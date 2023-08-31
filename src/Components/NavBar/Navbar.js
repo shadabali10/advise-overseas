@@ -4,13 +4,13 @@ import "./navbarstyle.css";
 // import { Popover } from "@headlessui/react";
 import KD from "./KDDropDown";
 import KE from "./KEDropDown";
-import KDSUB from "./KDSubDropDown";
-import KME from "./KMEDropDown";
-import KV from "./KVDropDown";
-import { MenuItems } from "./MenuItems";
-import { KDItems } from "./KDItems";
-import { KDSub } from "./KDSub";
-import TestDropdown from "./TestDropdown";
+// import KDSUB from "./KDSubDropDown";
+// import KME from "./KMEDropDown";
+// import KV from "./KVDropDown";
+// import { MenuItems } from "./MenuItems";
+// import { KDItems } from "./KDItems";
+// import { KDSub } from "./KDSub";
+// import TestDropdown from "./TestDropdown";
 import { HashLink as NLink } from "react-router-hash-link";
 import overseasLogo from "../../images/advise-overseas-logo.jpeg"
 export default function Navbar() {
@@ -50,9 +50,9 @@ export default function Navbar() {
     }
   };
 
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo(0, 0);
+  // };
   return (
     <>
       <div class="bg-gray-900 sticky fixingnav top-0">
@@ -66,7 +66,7 @@ export default function Navbar() {
               class="inline-flex items-center"
             >
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-               <div className="overseasLogo"><img src={overseasLogo} ></img></div> 
+               <div className="overseasLogo"><img src={overseasLogo} alt="abc" ></img></div> 
               </span>
             </NLink>
             <ul class="items-center hidden space-x-8 lg:flex">

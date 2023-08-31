@@ -15,7 +15,7 @@ import USA from "./Components/Schools/USA/USA";
 import HowToApply from "./Components/UnderGrad/HowToApply/HowToApply";
 import ProgramType from "./Components/ProgramType/ProgramType";
 import Resources from "./Components/Resources/Resources";
-import { CommentAction } from "semantic-ui-react";
+// import { CommentAction } from "semantic-ui-react";
 import Contact from "./Components/contact/Contact";
 import UK from "./Components/Schools/UK/UK";
 import EUROPE from "./Components/Schools/EUROPE/EUROPE";
@@ -70,6 +70,7 @@ function App() {
           <Route exact path="/scholar" component={Scholars} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/materials" component={Materials} />
+          <Route exact path="/scholarships" component={Scholarship} />
 
           <Route exact path="/test" component={Test} />
         </Switch>

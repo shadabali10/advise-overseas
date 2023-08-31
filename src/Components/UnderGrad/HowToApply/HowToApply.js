@@ -55,6 +55,7 @@ const HowToApply = () => {
                   <img
                     className="h-3 pr-3"
                     src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                    alt="abc"
                   />
                   Most universities give you the option to apply directly on
                   their websites.
@@ -63,6 +64,7 @@ const HowToApply = () => {
                   <img
                     className="h-3 pr-3 mt-2"
                     src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                    alt="abc"
                   />
                   Be sure to read the requirements carefully when applying to
                   American universities. Some will require standardised tests
@@ -74,6 +76,7 @@ const HowToApply = () => {
                   <img
                     className="h-3 pr-3 mt-2"
                     src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                    alt="abc"
                   />
                   University application fees are usually between 75-100 USD,
                   depending on the university. If you have trouble paying your
@@ -83,6 +86,7 @@ const HowToApply = () => {
                   <img
                     className="h-3 pr-3 mt-2"
                     src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                    alt="abc"
                   />
                   Non-US students may be required to supply proof that their
                   English-language skills are proficient enough to attend
@@ -228,6 +232,7 @@ const HowToApply = () => {
                   <img
                     className="h-3 pr-3"
                     src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                    alt="abc"
                   />
                   If you are applying for the fall (autumn) admission, early
                   deadlines will be between October and November, the previous
@@ -237,6 +242,7 @@ const HowToApply = () => {
                   <img
                     className="h-3 pr-3 mt-2"
                     src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                    alt="abc"
                   />
                   If youre applying for the fall (autumn) admission, regular
                   admission deadlines will be between February and March, the
@@ -258,6 +264,7 @@ const HowToApply = () => {
                   <img
                     className="h-3 pr-3"
                     src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                    alt="abc"
                   />
                   If you are applying for the fall admission, your deadline can
                   be anywhere from January to March.
@@ -266,6 +273,7 @@ const HowToApply = () => {
                   <img
                     className="h-3 pr-3 mt-2"
                     src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                    alt="abc"
                   />
                   If you are applying for the spring admission, your deadline is
                   probably anywhere between July and September, the previous
@@ -299,6 +307,7 @@ const HowToApply = () => {
               <img
                 className="h-3 pr-3 mt-2"
                 src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                alt="abc"
               />
               <p className="mb-3 text-md font-semibold text-gray-900">
                 If you arent a US citizen, you will need to use your acceptance
@@ -309,6 +318,7 @@ const HowToApply = () => {
               <img
                 className="h-3 pr-3 mt-2"
                 src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                alt="abc"
               />
               <p className="mb-3 text-md font-semibold text-gray-900">
                 If you arent a US citizen, you will need to use your acceptance
@@ -319,6 +329,7 @@ const HowToApply = () => {
               <img
                 className="h-3 pr-3 mt-2"
                 src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                alt="abc"
               />
               <p className="mb-3 text-md font-semibold text-gray-900">
                 Check whether the university you applied to requires an
@@ -329,6 +340,7 @@ const HowToApply = () => {
               <img
                 className="h-3 pr-3 mt-2"
                 src="https://img.icons8.com/material-outlined/24/000000/filled-circle--v1.png"
+                alt="abc"
               />
               <p className="mb-3 text-md font-semibold text-gray-900">
                 Celebrate your victory of being admitted at the university of

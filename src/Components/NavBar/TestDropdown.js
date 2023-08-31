@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MenuItems } from "./MenuItems";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import "./navbarstyle.css";
 import SubNavigation from "./SubNavigation";
@@ -9,8 +9,8 @@ import { HashLink as NLink } from "react-router-hash-link";
 function Dropdown({ dropdown }) {
   const [click, setClick] = useState(false);
   const [subnav, setSubNav] = useState(true);
-  const [Snav, setSNav] = useState(false);
-  const [KDSubdropdown, setSubDropdown] = useState(false);
+  // const [Snav, setSNav] = useState(false);
+  // const [KDSubdropdown, setSubDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const onMouseEnter = () => {

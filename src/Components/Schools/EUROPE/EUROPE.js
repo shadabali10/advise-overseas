@@ -1,29 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import firebase from "../../../Firebase";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const EUROPE = () => {
   const ref = firebase.firestore().collection("EUROPE");
   console.log(ref);
 
-  const [data, setdata] = useState([]);
-  const [loader, setloader] = useState(true);
+  // const [data, setdata] = useState([]);
+  // const [loader, setloader] = useState(true);
 
-  function getData() {
-    ref.onSnapshot((querySnapshot) => {
-      const items = [];
-      querySnapshot.forEach((doc) => {
-        items.push(doc.data());
-      });
-      setdata(items);
-      setloader(false);
-    });
-  }
+  const data = [];
+  const loader = true;
 
-  useEffect(() => {
-    getData();
-    console.log(data);
-  }, []);
+  // function getData() {
+  //   ref.onSnapshot((querySnapshot) => {
+  //     const items = [];
+  //     querySnapshot.forEach((doc) => {
+  //       items.push(doc.data());
+  //     });
+  //     setdata(items);
+  //     setloader(false);
+  //   });
+  // }
+
+  // useEffect(() => {
+  //   getData();
+  //   console.log(data);
+  // }, []);
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { KVItems } from "./KVItems";
 import { HashLink as NLink } from "react-router-hash-link";
-import Scroll from "react-scroll";
-import { Link } from "react-router-dom";
+// import Scroll from "react-scroll";
+// import { Link } from "react-router-dom";
 // import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import "./navbarstyle.css";
 // import SubNavigation from "./SubNavigation";
