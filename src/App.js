@@ -71,8 +71,8 @@ function App() {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/materials" component={Materials} />
           <Route exact path="/scholarships" component={Scholarship} />
-
           <Route exact path="/test" component={Test} />
+          
         </Switch>
         <Footer />
       </BrowserRouter>
