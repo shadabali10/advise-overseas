@@ -1,17 +1,13 @@
 export const KMEItems = [
   {
-    title: "Services - Products & pricing",
-    path: "/kme",
+    title: "IELTS",
+    path: "/ielts",
     cName: "dropdown-link",
   },
   {
-    title: "Link to Galleries",
-    path: "kme",
+    title: "PTE",
+    path: "/pte",
     cName: "dropdown-link",
   },
-  {
-    title: "Book Now!",
-    path: "/",
-    cName: "dropdown-link",
-  },
+
 ];

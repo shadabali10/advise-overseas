@@ -9,4 +9,10 @@ export const KEItems = [
     path: "/documents",
     cName: "dropdown-link  font-bold",
   },
+  {
+    title: "OUR EXPERTS",
+    path: "/scholar",
+    cName: "dropdown-link  font-bold",
+  },
+  
 ];

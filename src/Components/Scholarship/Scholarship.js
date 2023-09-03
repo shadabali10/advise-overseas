@@ -20,7 +20,7 @@ const Scholarship = () => {
                 fill="currentColor"
                 className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
               >
-                <defs>
+                {/* <defs>
                   <pattern
                     id="84d09fa9-a544-44bd-88b2-08fdf4cddd38"
                     x="0"
@@ -30,7 +30,7 @@ const Scholarship = () => {
                   >
                     <circle cx="1" cy="1" r=".7" />
                   </pattern>
-                </defs>
+                </defs> */}
                 <rect
                   fill="url(#84d09fa9-a544-44bd-88b2-08fdf4cddd38)"
                   width="52"

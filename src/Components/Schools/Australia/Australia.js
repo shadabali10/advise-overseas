@@ -2,8 +2,8 @@ import React from "react";
 import firebase from "../../../Firebase";
 // import { Link } from "react-scroll";
 
-const EUROPE = () => {
-  const ref = firebase.firestore().collection("EUROPE");
+const Australia = () => {
+  const ref = firebase.firestore().collection("MIDDLE-EAST");
   console.log(ref);
 
   // const [data, setdata] = useState([]);
@@ -38,7 +38,7 @@ const EUROPE = () => {
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400"></p>
           </div>
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-            Europe Universities
+            Australia Universities
           </h2>
         </div>
         <hr />
@@ -103,4 +103,4 @@ const EUROPE = () => {
   );
 };
 
-export default EUROPE;
+export default Australia;

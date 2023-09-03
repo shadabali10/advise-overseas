@@ -1,8 +1,7 @@
-// import React, { useEffect } from "react";
 import React from "react";
 import { useHistory } from "react-router";
 
-const Phd = () => {
+const PTE = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -16,8 +15,8 @@ const Phd = () => {
     history.push("/uk");
   }
 
-  function clickEUROPE() {
-    history.push("/europe");
+  function clickNEWZEELAND() {
+    history.push("/newzeeland");
   }
 
   function clickCANADA() {
@@ -28,8 +27,8 @@ const Phd = () => {
     history.push("/asia");
   }
 
-  function clickMIDEAST() {
-    history.push("/mideast");
+  function clickAUSTRALIA() {
+    history.push("/australia");
   }
   return (
     <>
@@ -44,7 +43,7 @@ const Phd = () => {
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                "url('https://images.pexels.com/photos/6344238/pexels-photo-6344238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
+                "url('https://images.pexels.com/photos/6147161/pexels-photo-6147161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
             }}
           >
             <span
@@ -56,7 +55,7 @@ const Phd = () => {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl">PHD</h1>
+                  <h1 className="text-white font-semibold text-5xl">PTE</h1>
                 </div>
               </div>
             </div>
@@ -88,24 +87,17 @@ const Phd = () => {
                 </div>
               </a>
               <h5 className="mb-4 text-4xl font-extrabold leading-none">
-                PhD degrees are postgraduate programmes that usually follow a
-                Master's, MPhil or MRes.
+              Join PTE Classes in the best institute in the city
               </h5>
               <p className="mb-6 text-gray-900">
-                Students are required to do their own research in a chosen
-                topic. With the help of a supervisor, you develop knowledge and
-                analytical skills in a specific or multidisciplinary field and
-                you carry out independent research. The duration of a PhD degree
-                differs per country and institution. Sometimes your own research
-                is accompanied by work for the department such as giving
-                seminars or small group teaching.
+              Effective time management is crucial for PTE success. Plan and practice to allocate your time wisely for each section. This will reduce stress and improve your chances of success. Master time management for PTE excellence!"
               </p>
               <hr className="mb-5 border-gray-300" />
             </div>
             <div>
               <img
                 className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-                src="https://images.pexels.com/photos/6334577/pexels-photo-6334577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="https://images.pexels.com/photos/6147276/pexels-photo-6147276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 alt=""
               />
             </div>
@@ -184,7 +176,7 @@ const Phd = () => {
                 </div>
               </div>
             </div>
-            <div onClick={clickEUROPE}>
+            <div onClick={clickNEWZEELAND}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -196,7 +188,7 @@ const Phd = () => {
                 </div>
               </div>
             </div>
-            <div onClick={clickMIDEAST}>
+            <div onClick={clickAUSTRALIA}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -229,4 +221,4 @@ const Phd = () => {
   );
 };
 
-export default Phd;
+export default PTE;

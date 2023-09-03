@@ -64,7 +64,7 @@ function Contact() {
           <div className="text-center">
             <h1 className="text-2xl font-semibold text-black uppercase lg:text-3xl cursor-pointer">
               {/* Network <span className="text-blue-400 underline">Saas</span> */}
-              {/* Contact Us */}
+              Contact Us
             </h1>
             {/* <button className="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auemail hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
               Start project
@@ -75,33 +75,35 @@ function Contact() {
       <h1 className="text-center text-2xl font-semibold text-black uppercase lg:text-3xl">
         Get in Touch
       </h1>
-      {/* <div className="h-32 bg-black md:-mt-28 md:visible invisible"></div> */}
+      <div className="h-32 bg-black md:-mt-28 md:visible invisible"></div>
       <div className="flex flex-wrap align-middle">
         <div className="lg:w-2/5 lg:mt-60 w-full">
           <div className="flex flex-col justify-items-center items-center align-middle lg:pl-8 lg:mt-0 mt-4 mx-3">
-            <div className="md:text-2xl text-md text-black text-center">
+            {/* <div className="md:text-2xl text-md text-black text-center">
               Looking for help? Fill in the form and one of our experts will get
               in touch with you.
-            </div>
-            <div className="inline-flex pt-6">
-              {/* <div>
+            </div> */}
+            {/* <div className="inline-flex pt-6">
+              <div>
                 <img
                   className="md:h-12 md:w-12 h-8 w-8 mx-2 cursor-pointer"
                   src="https://image.flaticon.com/icons/png/512/187/187209.png"
                   alt="YouTube"
                   title="YouTube"
                 />
-              </div> */}
-            </div>
+              </div>
+            </div> */}
           </div>
         </div>
-        <div className="lg:w-3/5 w-full">
-          <section className="px-6 py-4 mx-auemail bg-white text-black rounded-md dark:bg-gray-800 mt-4">
-            {/* <h2 className="text-3xl font-semibold text-center text-black dark:text-white">
+        <div className="lg:w-3/5 w-full flex justify-center items-center">
+          <section className="px-6 py-4 mx-auemail bg-white text-black rounded-md dark:bg-gray-800 mt-4 ">
+            <h2 className="text-3xl font-semibold text-center text-black dark:text-white">
               Get in Touch
-            </h2> */}
-            <p className="mt-3 text-center text-gray-700 dark:text-gray-400">
-              {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. */}
+            </h2>
+            <p className="mt-3 text-center text-gray-700 dark:text-gray-400 text-justify">
+            We're here to listen and assist you on your educational journey. Whether you're seeking information on admissions, scholarships, academic programs, or anything else related to your college experience, we're just a message away. Feel free to reach out to us using the form below, and we'll ensure you receive the guidance and support you need. Your success is our priority, and we look forward to connecting with you!
+
+
             </p>
 
             <div className="grid grid-cols-1 lg:gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3">

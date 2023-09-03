@@ -1,7 +1,8 @@
+// import React, { useEffect } from "react";
 import React from "react";
 import { useHistory } from "react-router";
 
-const Masters = () => {
+const IELTS = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,7 +44,7 @@ const Masters = () => {
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                "url('https://images.pexels.com/photos/6147161/pexels-photo-6147161.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
+                "url('https://images.pexels.com/photos/6344238/pexels-photo-6344238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')",
             }}
           >
             <span
@@ -55,7 +56,7 @@ const Masters = () => {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl">MASTERS</h1>
+                  <h1 className="text-white font-semibold text-5xl">IELTS</h1>
                 </div>
               </div>
             </div>
@@ -87,21 +88,19 @@ const Masters = () => {
                 </div>
               </a>
               <h5 className="mb-4 text-4xl font-extrabold leading-none">
-                Master’s degree program is an excellent way to dive deeper into
-                a subject area.
+              IELTS: The best institute in Kashipur
               </h5>
+
+             
               <p className="mb-6 text-gray-900">
-                Masters abroad primarily includes STEM (Science, Technology,
-                Engineering, and Management) programs. International student
-                population planning for an MS popularly opt for courses like
-                Engineering, business and management, computer sciences, and IT.
+              IELTS stands for International English Language Testing System that is required to be taken by international students and workers who wish to study or work in a country where English is the primary language of communication.
               </p>
               <hr className="mb-5 border-gray-300" />
             </div>
             <div>
               <img
                 className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-                src="https://images.pexels.com/photos/6147276/pexels-photo-6147276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="https://images.pexels.com/photos/6334577/pexels-photo-6334577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 alt=""
               />
             </div>
@@ -225,4 +224,4 @@ const Masters = () => {
   );
 };
 
-export default Masters;
+export default IELTS;

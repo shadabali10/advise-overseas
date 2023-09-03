@@ -9,8 +9,8 @@ import { HashLink as NLink } from "react-router-hash-link";
 function Dropdown({ dropdown }) {
   const [click, setClick] = useState(false);
   const [subnav, setSubNav] = useState(true);
-  // const [Snav, setSNav] = useState(false);
-  // const [KDSubdropdown, setSubDropdown] = useState(false);
+  const [Snav, setSNav] = useState(false);
+  const [KDSubdropdown, setSubDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const onMouseEnter = () => {
