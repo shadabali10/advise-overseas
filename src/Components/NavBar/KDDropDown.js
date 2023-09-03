@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { KDItems } from "./KDItems";
-import { NavLink, Link } from "react-router-dom";
-import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
+import {  Link } from "react-router-dom";
+// import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import "./navbarstyle.css";
-import SubNavigation from "./SubNavigation";
-import KDSUB from "./KDSubDropDown";
-import { KDSub } from "./KDSub";
+// import SubNavigation from "./SubNavigation";
+// import KDSUB from "./KDSubDropDown";
+// import { KDSub } from "./KDSub";
 
 function KDDropdown() {
   const [click, setClick] = useState(false);
   const [subnav, setSubNav] = useState(false);
-  const [KDSubdropdown, setKDSubDropdown] = useState(false);
+  // const [KDSubdropdown, setKDSubDropdown] = useState(false);
   const handleClick = () => setClick(!click);
   const onMouseEnter = () => {
     if (window.innerWidth < 768) {
@@ -29,20 +29,20 @@ function KDDropdown() {
     // }
   };
 
-  const onKDSubMouseEnter = () => {
-    if (window.innerWidth < 1000) {
-      setKDSubDropdown(false);
-    } else {
-      setKDSubDropdown(true);
-    }
-  };
-  const onKDSubMouseLeave = () => {
-    if (window.innerWidth < 1000) {
-      setKDSubDropdown(false);
-    } else {
-      setKDSubDropdown(false);
-    }
-  };
+  // const onKDSubMouseEnter = () => {
+  //   if (window.innerWidth < 1000) {
+  //     setKDSubDropdown(false);
+  //   } else {
+  //     setKDSubDropdown(true);
+  //   }
+  // };
+  // const onKDSubMouseLeave = () => {
+  //   if (window.innerWidth < 1000) {
+  //     setKDSubDropdown(false);
+  //   } else {
+  //     setKDSubDropdown(false);
+  //   }
+  // };
 
   return (
     <>

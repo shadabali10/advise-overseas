@@ -1,7 +1,6 @@
 {
-  "name": "Advise Overseas",
+  "name": "advise-overseas",
   "version": "0.1.0",
-  "homepage": "https://scholarshipaccessproject.com",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.3.0",
@@ -10,6 +9,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.22.0",
     "firebase": "^8.10.0",
+    "gh-pages": "^6.0.0",
     "react": "^17.0.2",
     "react-circular-progressbar": "^2.0.4",
     "react-dom": "^17.0.2",
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "start": "craco --openssl-legacy-provider start",
-    "build": "craco build",
+    "build": "craco --openssl-legacy-provider build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },

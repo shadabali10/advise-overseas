@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
+import React from "react";
 import { useHistory } from "react-router";
 
-const Phd = () => {
+const IELTS = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -55,7 +56,7 @@ const Phd = () => {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl">PHD</h1>
+                  <h1 className="text-white font-semibold text-5xl">IELTS</h1>
                 </div>
               </div>
             </div>
@@ -87,17 +88,12 @@ const Phd = () => {
                 </div>
               </a>
               <h5 className="mb-4 text-4xl font-extrabold leading-none">
-                PhD degrees are postgraduate programmes that usually follow a
-                Master's, MPhil or MRes.
+              IELTS: The best institute in Kashipur
               </h5>
+
+             
               <p className="mb-6 text-gray-900">
-                Students are required to do their own research in a chosen
-                topic. With the help of a supervisor, you develop knowledge and
-                analytical skills in a specific or multidisciplinary field and
-                you carry out independent research. The duration of a PhD degree
-                differs per country and institution. Sometimes your own research
-                is accompanied by work for the department such as giving
-                seminars or small group teaching.
+              IELTS stands for International English Language Testing System that is required to be taken by international students and workers who wish to study or work in a country where English is the primary language of communication.
               </p>
               <hr className="mb-5 border-gray-300" />
             </div>
@@ -228,4 +224,4 @@ const Phd = () => {
   );
 };
 
-export default Phd;
+export default IELTS;

@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { HashLink as NLink } from "react-router-hash-link";
-import linkedin from "../../images/linkedin.png";
+// import linkedin from "../../images/linkedin.png";
 import overseasLogo from "../../images/advise-overseas-logo.jpeg"
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
                 className="flex justify-center space-x-3 md:justify-start"
               >
                 <span className="self-center text-2xl font-semibold">
-                <div className="overseasLogo"><img src={overseasLogo} ></img></div> 
+                <div className="overseasLogo"><img src={overseasLogo} alt="abc" ></img></div> 
                 </span>
               </NLink>
             </div>

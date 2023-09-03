@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { KDItems } from "./KDItems";
 import { Link } from "react-router-dom";
-import KDSUB from "./KDSubDropDown";
-import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
+// import KDSUB from "./KDSubDropDown";
+// import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 import "./navbarstyle.css";
-import SubNavigation from "./SubNavigation";
+// import SubNavigation from "./SubNavigation";
 
 function KDSubDropdown() {
   const [click, setClick] = useState(false);
@@ -14,17 +14,17 @@ function KDSubDropdown() {
     if (window.innerWidth < 768) {
       setSubNav(false);
     }
-    // else {
-    //   setSubNav(true);
-    // }
+    else {
+      setSubNav(true);
+    }
   };
   const onMouseLeave = () => {
     if (window.innerWidth < 768) {
       setSubNav(false);
     }
-    // else {
-    //   setSubNav(false);
-    // }
+    else {
+      setSubNav(false);
+    }
   };
 
   return (
@@ -33,13 +33,16 @@ function KDSubDropdown() {
         return (
           <>
             <Link
-              className={item.cName}
-              to={item.path}
-              onClick={() => setClick(false)}
-              //   onClick={() => setSubNav(!subnav)}
-            >
-              {item.title}
-            </Link>
+  className={item.cName}
+  to={item.path}
+  onClick={() => {
+    setClick(false);
+    setSubNav(!subnav);
+  }}
+>
+  {item.title}
+</Link>
+
 
             <hr class="border-gray-200 dark:border-gray-700 " />
           </>

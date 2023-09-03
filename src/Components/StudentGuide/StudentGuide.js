@@ -1,9 +1,9 @@
 import React from "react";
 
 const StudentGuide = () => {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo(0, 0);
+  // };
   return (
     <>
       <div class="container px-6 py-16 mx-auto text-center">
@@ -11,9 +11,10 @@ const StudentGuide = () => {
           <h1 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">
             Student Guide
           </h1>
-          <p class="mt-6 text-gray-500 dark:text-gray-300">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-            similique obcaecati illum mollitia.
+          <p class="mt-6 text-gray-800 dark:text-gray-800 text-justify">
+          A student guide is an educational reference document providing essential information and instructions
+           to assist students in their academic pursuits, encompassing topics such as study techniques, time 
+           management, career development, and personal well-being.
           </p>
         </div>
       </div>
@@ -54,15 +55,15 @@ const StudentGuide = () => {
               </div>
               <div className="pt-1 pb-8">
                 <p className="mb-2 text-lg font-bold">Step 1</p>
-                <p className="text-gray-700">
+                <p className="text-gray-700 text-justify">
                   Application
                   <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
-                  Veritatis
+                  The Student Guide Program is a dynamic initiative 
+                  designed to empower our students with the knowledge, resources, and 
+                  support they need for a successful academic journey. Through peer 
+                  mentorship, academic assistance, personal development opportunities, 
+                  and career guidance, our program ensures that students excel both academically 
+                  and personally. 
                 </p>
               </div>
             </div>
@@ -98,15 +99,10 @@ const StudentGuide = () => {
               </div>
               <div className="pt-1 pb-8">
                 <p className="mb-2 text-lg font-bold">Step 2</p>
-                <p className="text-gray-700">
+                <p className="text-blue-700 text-justify">
                   Profile
                   <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
-                  Veritatis
+                  My student profile offers a concise overview of my academic background, interests, and ambitions. With a strong dedication to academic excellence, I'm passionate about any interest and actively engage in extracurricular activities . I'm driven by aspirations and I believe  perfect environment to nurture my growth and achieve my goals.
                 </p>
               </div>
             </div>
@@ -142,16 +138,14 @@ const StudentGuide = () => {
               </div>
               <div className="pt-1 pb-8">
                 <p className="mb-2 text-lg font-bold">Step 3</p>
-                <p className="text-gray-700">
+                <p className="text-red-700 text-justify">
                   Selection
                   <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
-                  Veritatis
-                </p>
+                  To enhance your profile for selection, consider emphasizing specific qualifications, 
+                  experiences, and skills that are directly relevant to the selection criteria. 
+                  Highlight achievements, leadership roles, and any unique qualities that set you 
+                  apart. Tailor your profile to align closely with the requirements and expectations
+                   of the selection process to maximize your chances of being chosen.                </p>
               </div>
             </div>
             <div className="flex">
@@ -186,15 +180,13 @@ const StudentGuide = () => {
               </div>
               <div className="pt-1 pb-8">
                 <p className="mb-2 text-lg font-bold">Step 4</p>
-                <p className="text-gray-700">
+                <p className="text-green-700 text-justify">
                   Visa
                   <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
-                  Veritatis
+                  A visa is a formal permission slip from a government that lets you visit 
+                  or live in a foreign country for a particular reason, like tourism, work,
+                   or study. The type and rules of visas vary by country, so it's crucial to 
+                   check the specific requirements for the country you plan to visit.
                 </p>
               </div>
             </div>

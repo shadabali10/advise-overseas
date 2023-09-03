@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useHistory } from "react-router";
 
-const Masters = () => {
+const PTE = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -15,8 +15,8 @@ const Masters = () => {
     history.push("/uk");
   }
 
-  function clickEUROPE() {
-    history.push("/europe");
+  function clickNEWZEELAND() {
+    history.push("/newzeeland");
   }
 
   function clickCANADA() {
@@ -27,8 +27,8 @@ const Masters = () => {
     history.push("/asia");
   }
 
-  function clickMIDEAST() {
-    history.push("/mideast");
+  function clickAUSTRALIA() {
+    history.push("/australia");
   }
   return (
     <>
@@ -55,7 +55,7 @@ const Masters = () => {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl">MASTERS</h1>
+                  <h1 className="text-white font-semibold text-5xl">PTE</h1>
                 </div>
               </div>
             </div>
@@ -87,14 +87,10 @@ const Masters = () => {
                 </div>
               </a>
               <h5 className="mb-4 text-4xl font-extrabold leading-none">
-                Master’s degree program is an excellent way to dive deeper into
-                a subject area.
+              Join PTE Classes in the best institute in the city
               </h5>
               <p className="mb-6 text-gray-900">
-                Masters abroad primarily includes STEM (Science, Technology,
-                Engineering, and Management) programs. International student
-                population planning for an MS popularly opt for courses like
-                Engineering, business and management, computer sciences, and IT.
+              Effective time management is crucial for PTE success. Plan and practice to allocate your time wisely for each section. This will reduce stress and improve your chances of success. Master time management for PTE excellence!"
               </p>
               <hr className="mb-5 border-gray-300" />
             </div>
@@ -180,7 +176,7 @@ const Masters = () => {
                 </div>
               </div>
             </div>
-            <div onClick={clickEUROPE}>
+            <div onClick={clickNEWZEELAND}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -192,7 +188,7 @@ const Masters = () => {
                 </div>
               </div>
             </div>
-            <div onClick={clickMIDEAST}>
+            <div onClick={clickAUSTRALIA}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -225,4 +221,4 @@ const Masters = () => {
   );
 };
 
-export default Masters;
+export default PTE;

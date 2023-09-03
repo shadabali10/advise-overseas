@@ -44,7 +44,7 @@ function KEDropDown() {
             </>
           );
         })}
-        <li className="flex items-center px-3 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+        {/* <li className="flex items-center px-3 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
           <a
             href="https://drive.google.com/drive/folders/1RhGc24EZKHLGlx8iYZ9tViROBQjK0U_S?usp=sharing"
             className="dropdown-link  font-bold"
@@ -53,7 +53,7 @@ function KEDropDown() {
           >
             MATERIALS
           </a>
-        </li>
+        </li> */}
         <hr class="border-gray-200 dark:border-gray-700 " />
       </ul>
     </>

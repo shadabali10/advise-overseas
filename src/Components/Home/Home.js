@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import homeimg from "../../images/home.png";
 import Hero from "../Hero";
-import InfoSection from "../InfoSection";
-import { InfoData } from "../data/InfoData";
+// import InfoSection from "../InfoSection";
+// import { InfoData } from "../data/InfoData";
 import { SliderData } from "../data/SliderData";
-import GlobalStyle from "../globalStyles";
+// import GlobalStyle from "../globalStyles";
 import { useHistory } from "react-router-dom";
 
 const Home = () => {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo(0, 0);
+  // };
   let history = useHistory();
 
   function clickUSA() {
@@ -100,7 +100,7 @@ const Home = () => {
                   fill="currentColor"
                   className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
                 >
-                  <defs>
+                  {/* <defs>
                     <pattern
                       id="1d4040f3-9f3e-4ac7-b117-7d4009658ced"
                       x="0"
@@ -110,7 +110,7 @@ const Home = () => {
                     >
                       <circle cx="1" cy="1" r=".7" />
                     </pattern>
-                  </defs>
+                  </defs> */}
                   <rect
                     fill="url(#1d4040f3-9f3e-4ac7-b117-7d4009658ced)"
                     width="52"
@@ -119,7 +119,7 @@ const Home = () => {
                 </svg>
               </span>{" "}
               Turn your study abroad dream into reality
-            </h2>
+            </h2>   
             <p className="text-base text-gray-700 md:text-lg">
               Here are the various countries we help you get into
             </p>

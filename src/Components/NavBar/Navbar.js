@@ -4,19 +4,21 @@ import "./navbarstyle.css";
 // import { Popover } from "@headlessui/react";
 import KD from "./KDDropDown";
 import KE from "./KEDropDown";
-import KDSUB from "./KDSubDropDown";
+// import KDSUB from "./KDSubDropDown";
 import KME from "./KMEDropDown";
-import KV from "./KVDropDown";
-import { MenuItems } from "./MenuItems";
-import { KDItems } from "./KDItems";
-import { KDSub } from "./KDSub";
-import TestDropdown from "./TestDropdown";
+// import KV from "./KVDropDown";
+// import { MenuItems } from "./MenuItems";
+// import { KDItems } from "./KDItems";
+// import { KDSub } from "./KDSub";
+// import TestDropdown from "./TestDropdown";
 import { HashLink as NLink } from "react-router-hash-link";
 import overseasLogo from "../../images/advise-overseas-logo.jpeg"
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const [KDdropdown, setKDDropdown] = useState(false);
+
+  const [KMEdropdown, setKMEDropdown] = useState(false);
 
   const [KEdropdown, setKEDropdown] = useState(false);
 
@@ -35,6 +37,21 @@ export default function Navbar() {
     }
   };
 
+  const onKMEMouseEnter = () => {
+    if (window.innerWidth < 1000) {
+      setKMEDropdown(false);
+    } else {
+      setKMEDropdown(true);
+    }
+  };
+  const onKMEMouseLeave = () => {
+    if (window.innerWidth < 1000) {
+      setKMEDropdown(false);
+    } else {
+      setKMEDropdown(false);
+    }
+  };
+
   const onKDMouseEnter = () => {
     if (window.innerWidth < 1000) {
       setKDDropdown(false);
@@ -50,9 +67,10 @@ export default function Navbar() {
     }
   };
 
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo(0, 0);
+  // };
+  
   return (
     <>
       <div class="bg-gray-900 sticky fixingnav top-0">
@@ -66,43 +84,95 @@ export default function Navbar() {
               class="inline-flex items-center"
             >
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-               <div className="overseasLogo"><img src={overseasLogo} ></img></div> 
+               <div className="overseasLogo"><img src={overseasLogo} alt="abc" ></img></div> 
               </span>
             </NLink>
+           
             <ul class="items-center hidden space-x-8 lg:flex">
-              <li onMouseEnter={onKDMouseEnter} onMouseLeave={onKDMouseLeave}>
+              <li>
+                
+              </li>
+            <li >
                 <NavLink
-                  to="/programtype"
+                  to="/#top"
                   aria-label="Our product"
                   title="Our product"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-                  Program Types
+                Home
+                </NavLink>
+              </li>
+              {/* <li >
+                <NavLink
+                  to="/scholar"
+                  aria-label="Our product"
+                  title="Our product"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                About
+                </NavLink>
+                {KDdropdown && <KD />}
+              </li> */}
+             
+             
+              <li onMouseEnter={onKMEMouseEnter} onMouseLeave={onKMEMouseLeave}>
+              <NavLink
+                  to="/resources"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  aria-label="Our product"
+                  title="Our product"
+                >
+                  English Coaching
+                </NavLink>
+                {KMEdropdown && <KME />}
+                </li>
+                <li >
+              <NavLink
+                  to="/student-guide"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  aria-label="Our product"
+                  title="Our product"
+                >
+                  Student Guide
+                </NavLink>
+                {/* {KMEdropdown && <KME />} */}
+                </li>
+                <li>
+                <Link
+                  to="/gallery"
+                  title=""
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Gallery
+                </Link>
+              </li>
+              <li onMouseEnter={onKDMouseEnter} onMouseLeave={onKDMouseLeave}>
+                <NavLink
+                  to="/blogs"
+                  aria-label="Our product"
+                  title="Our product"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                Immigration
                 </NavLink>
                 {KDdropdown && <KD />}
               </li>
               <li onMouseEnter={onKEMouseEnter} onMouseLeave={onKEMouseLeave}>
                 <NavLink
-                  to="/resources"
+                  to="/about"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-                  Resources
+                  About
                 </NavLink>
                 {KEdropdown && <KE />}
               </li>
-              <NavLink
-                  to="/resources"
-                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-                >
-                  Scholarships
-                </NavLink>
               <li>
                 <Link
                   to="/contact"
                   title=""
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -189,12 +259,12 @@ export default function Navbar() {
                         </li>
                         <li>
                           <Link
-                            to="/resources"
+                            to="/about"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Resources
+                            About
                           </Link>
                         </li>
 
@@ -216,7 +286,7 @@ export default function Navbar() {
                             title="About us"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Contact
+                            Contact Us
                           </Link>
                         </li>
                       </ul>

@@ -1,18 +1,33 @@
-import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
+// import { RiArrowDownSFill, RiArrowUpSFill } from "react-icons/ri";
 export const KDItems = [
   {
-    title: "UNDERGRADUATE",
-    path: "/undergrad",
+    title: "CANADA",
+    path: "/canada",
     cName: "dropdown-link font-bold",
   },
   {
-    title: "MASTERS",
-    path: "masters",
+    title: "USA",
+    path: "/usa",
     cName: "dropdown-link font-bold",
   },
   {
-    title: "PHD",
-    path: "phd",
+    title: "UK",
+    path: "uk",
+    cName: "dropdown-link font-bold",
+  },
+  {
+    title: "NEWZEELAND",
+    path: "/newzeeland",
+    cName: "dropdown-link font-bold",
+  },
+  {
+    title: "AUSTRALIA",
+    path: "/australia",
+    cName: "dropdown-link font-bold",
+  },
+  {
+    title: "ASIA",
+    path: "asia",
     cName: "dropdown-link font-bold",
   },
 ];

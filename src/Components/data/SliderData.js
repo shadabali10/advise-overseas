@@ -1,4 +1,4 @@
-import ImageOne from "../../images/ImageOne.jpeg";
+// import ImageOne from "../../images/ImageOne.jpeg";
 
 export const SliderData = [
   {
