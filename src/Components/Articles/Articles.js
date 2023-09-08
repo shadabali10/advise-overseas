@@ -6,11 +6,10 @@ const Articles = () => {
       <div class="container px-6 py-16 mx-auto text-center">
         <div class="max-w-lg mx-auto">
           <h1 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">
-            Scholarship Blog
+          Blogs
           </h1>
-          <p class="mt-6 text-gray-500 dark:text-gray-300">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-            similique obcaecati illum mollitia.
+          <p class="mt-6 text-gray-500 dark:text-gray-300 text-justify">
+          Blogging is a canvas for your thoughts, a space to connect with others, and a journey of self-expression. In just a few words, it's about sharing your unique voice with the world, fostering connections, and leaving a lasting impact through the power of written words. Whether you're a seasoned blogger or new to the scene, blogging offers a platform for creativity and community, where every post is a step on your path to influence and insight. So, start your blog today and let your voice shine in the digital world.
           </p>
         </div>
       </div>
@@ -34,10 +33,7 @@ const Articles = () => {
               My Journey
             </a>
             <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
-              parturient et sem ipsum volutpat vel. Natoque sem et aliquam
-              mauris egestas quam volutpat viverra. In pretium nec senectus
-              erat. Et malesuada lobortis.
+            Studying abroad was a life-changing journey. From new friendships to cultural immersion, it transformed me in ways I never expected. Grateful for the memories and growth, I carry my study abroad experience with me wherever I go.
             </p>
           </div>
 
@@ -57,7 +53,7 @@ const Articles = () => {
                 </a>
               </div>
               <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">
-                21 SEP 2021
+                5 SEP 2023
               </span>
             </div>
           </div>
@@ -73,19 +69,16 @@ const Articles = () => {
         <div class="p-6">
           <div>
             <span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
-              Product
+              Tour
             </span>
             <a
               href="/"
               class="block mt-2 text-2xl font-semibold text-gray-800 dark:text-white hover:text-gray-600 hover:underline"
             >
-              My Journey
+             Embrace the Adventure
             </a>
             <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
-              parturient et sem ipsum volutpat vel. Natoque sem et aliquam
-              mauris egestas quam volutpat viverra. In pretium nec senectus
-              erat. Et malesuada lobortis.
+            Life is an incredible adventure waiting to be explored. From hidden treasures in distant lands to the thrill of the unknown, adventure beckons us to step out of our comfort zones and experience the extraordinary.
             </p>
           </div>
 
@@ -101,11 +94,11 @@ const Articles = () => {
                   href="/"
                   class="mx-2 font-semibold text-gray-700 dark:text-gray-200"
                 >
-                  Jone Doe
+                 John 
                 </a>
               </div>
               <span class="mx-1 text-xs text-gray-600 dark:text-gray-300">
-                21 SEP 2021
+                6 SEP 2023
               </span>
             </div>
           </div>

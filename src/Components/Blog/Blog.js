@@ -8,9 +8,8 @@ const Blog = () => {
           <h1 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">
             Blog
           </h1>
-          <p class="mt-6 text-gray-500 dark:text-gray-300">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-            similique obcaecati illum mollitia.
+          <p class="mt-6 text-gray-500 dark:text-gray-300 text-justify">
+          Blogging is a canvas for your thoughts, a space to connect with others, and a journey of self-expression. In just a few words, it's about sharing your unique voice with the world, fostering connections, and leaving a lasting impact through the power of written words. Whether you're a seasoned blogger or new to the scene, blogging offers a platform for creativity and community, where every post is a step on your path to influence and insight. So, start your blog today and let your voice shine in the digital world.
           </p>
         </div>
       </div>
@@ -20,16 +19,14 @@ const Blog = () => {
         <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
           <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
             <span className="inline-block mb-1 sm:mb-4">
-              The quick, brown fox
+            The Art of Finding Balance
               <br className="hidden md:block" />
-              jumps over a lazy dog
+              in a Busy World
             </span>
             <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
           </h2>
           <p className="text-gray-700 lg:text-sm lg:max-w-md">
-            "Sed ut perspiciatis unde omnis iste natus error sit iste voluptatem
-            accusantium doloremque rem aperiam, ipsa eaque quae. Sed ut
-            perspiciatis unde omnis iste."
+          In today's fast-paced world, finding balance can seem like a never-ending challenge. We juggle work, family, social commitments, and personal pursuits, often leaving us feeling overwhelmed. But the pursuit of balance is an art worth mastering.
           </p>
         </div>
         <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
@@ -42,7 +39,7 @@ const Blog = () => {
               />
               <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
                 <p className="text-sm font-medium tracking-wide text-white">
-                  Sed ut perspiciatis unde omnis iste natus error
+                The Myth of Perfect Balance
                 </p>
               </div>
             </div>
@@ -56,7 +53,7 @@ const Blog = () => {
               />
               <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
                 <p className="text-sm font-medium tracking-wide text-white">
-                  Leverage agile frameworks to provide a robust synopsis
+                Prioritization and Time Management
                 </p>
               </div>
             </div>
@@ -70,7 +67,7 @@ const Blog = () => {
               />
               <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
                 <p className="text-sm font-medium tracking-wide text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                Self-Care Is Not Selfish
                 </p>
               </div>
             </div>
@@ -84,14 +81,14 @@ const Blog = () => {
               />
               <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
                 <p className="text-sm font-medium tracking-wide text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit
+                Mindfulness in Daily Life
                 </p>
               </div>
             </div>
           </a>
         </div>
         <div className="text-center">
-          <a
+          {/* <a
             href="/"
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
@@ -104,7 +101,7 @@ const Blog = () => {
             >
               <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
             </svg>
-          </a>
+          </a> */}
         </div>
       </div>
     </>

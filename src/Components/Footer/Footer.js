@@ -61,39 +61,66 @@ const Footer = () => {
               <ul>
                 <li>
                   <NLink
-                    to="/programtype#top"
+                    to="/ielts#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
-                    Program Types
+                    English Coaching
                   </NLink>
                 </li>
                 <li>
                   <NLink
-                    to="/resources#top"
+                    to="/student-guide#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
-                    Resources
+                    Student Guide
                   </NLink>
                 </li>
                 <li>
                   <NLink
-                    to="/scholarship#top"
+                    to="/gallery#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
-                    Scholarship
+                    Gallery
                   </NLink>
                 </li>
 
+                <li>
+                  <NLink
+                    to="/#top"
+                    smooth
+                    className="hover:dark:text-violet-400"
+                  >
+                    Immigration
+                  </NLink>
+                </li>
+                <li>
+                  <NLink
+                    to="/about#top"
+                    smooth
+                    className="hover:dark:text-violet-400"
+                  >
+                    About
+                  </NLink>
+                </li>
+                <li>
+                  <NLink
+                    to="/articles#top"
+                    smooth
+                    className="hover:dark:text-violet-400"
+                  >
+                    Blogs
+                  </NLink>
+                </li>
                 <li>
                   <NLink
                     to="/contact#top"
                     smooth
                     className="hover:dark:text-violet-400"
                   >
-                    Contact
+                    Contact Us
                   </NLink>
                 </li>
               </ul>

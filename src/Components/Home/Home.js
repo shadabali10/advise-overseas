@@ -6,6 +6,10 @@ import Hero from "../Hero";
 import { SliderData } from "../data/SliderData";
 // import GlobalStyle from "../globalStyles";
 import { useHistory } from "react-router-dom";
+import Contact from "../contact/Contact";
+import Counter from "../Counter";
+import Testimonials from "../Testimonials";
+// import Testonomials from "../Testonomials";
 
 const Home = () => {
   // const scrollToTop = () => {
@@ -21,8 +25,8 @@ const Home = () => {
     history.push("/uk");
   }
 
-  function clickEUROPE() {
-    history.push("/europe");
+  function clickNEWZEELAND() {
+    history.push("/newzeeland");
   }
 
   function clickCANADA() {
@@ -33,8 +37,8 @@ const Home = () => {
     history.push("/asia");
   }
 
-  function clickMIDEAST() {
-    history.push("/mideast");
+  function clickAUSTRALIA() {
+    history.push("/australia");
   }
   return (
     <>
@@ -161,7 +165,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div onClick={clickEUROPE}>
+            <div onClick={clickNEWZEELAND}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -169,11 +173,11 @@ const Home = () => {
                   alt="Person"
                 />
                 <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                  <p className="mb-1 text-lg font-bold text-gray-100">Europe</p>
+                  <p className="mb-1 text-lg font-bold text-gray-100">Newzeeland</p>  
                 </div>
               </div>
             </div>
-            <div onClick={clickMIDEAST}>
+            <div onClick={clickAUSTRALIA}>
               <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img
                   className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -182,7 +186,7 @@ const Home = () => {
                 />
                 <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                   <p className="mb-1 text-lg font-bold text-gray-100">
-                    Middle-East
+                    Australia
                   </p>
                 </div>
               </div>
@@ -201,6 +205,10 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Contact/>
+        <Testimonials/>
+        <Counter/>
+       
       </section>
     </>
   );
