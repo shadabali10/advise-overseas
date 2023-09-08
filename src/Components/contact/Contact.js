@@ -8,6 +8,19 @@ function Contact() {
   //     window.scrollTo(0, 0)
   // });
 
+  // const customStyle = {
+   
+  //   color: 'blue',
+  //   width: '900px', 
+  //   height: '950px', 
+  //   border: '5px solid red', 
+  //   allowfullscreen: '',
+  //   loading: 'lazy', 
+  //   referrerpolicy: 'no-referrer-when-downgrade', 
+   
+  // };
+  
+
   const [name, setName] = useState("");
   const [email, setemail] = useState("");
   const [mailBody, setmailBody] = useState("");
@@ -53,8 +66,8 @@ function Contact() {
     setSubject("");
   };
   return (
-    <div className="md:-mt-28 mt-0 bg-white">
-      <div
+    <div className="mt-20 md:mt-172 bg-white hidden sm:block">
+      {/* <div
         className="bg-center bg-cover main-img mb-5"
         style={{
           backgroundImage: `url("https://images.unsplash.com/photo-1525182008055-f88b95ff7980?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80")`,
@@ -63,43 +76,42 @@ function Contact() {
         <div className="flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-50">
           <div className="text-center">
             <h1 className="text-2xl font-semibold text-black uppercase lg:text-3xl cursor-pointer">
-              {/* Network <span className="text-blue-400 underline">Saas</span> */}
+              Network <span className="text-blue-400 underline">Saas</span>
               Contact Us
             </h1>
-            {/* <button className="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auemail hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+            <button className="w-full px-4 py-2 mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-auemail hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
               Start project
-            </button> */}
+            </button>
           </div>
         </div>
-      </div>
+      </div> */}
       <h1 className="text-center text-2xl font-semibold text-black uppercase lg:text-3xl">
         Get in Touch
       </h1>
-      <div className="h-32 bg-black md:-mt-28 md:visible invisible"></div>
+      
       <div className="flex flex-wrap align-middle">
-        <div className="lg:w-2/5 lg:mt-60 w-full">
-          <div className="flex flex-col justify-items-center items-center align-middle lg:pl-8 lg:mt-0 mt-4 mx-3">
-            {/* <div className="md:text-2xl text-md text-black text-center">
-              Looking for help? Fill in the form and one of our experts will get
-              in touch with you.
-            </div> */}
-            {/* <div className="inline-flex pt-6">
-              <div>
-                <img
-                  className="md:h-12 md:w-12 h-8 w-8 mx-2 cursor-pointer"
-                  src="https://image.flaticon.com/icons/png/512/187/187209.png"
-                  alt="YouTube"
-                  title="YouTube"
-                />
-              </div>
-            </div> */}
-          </div>
-        </div>
+      <div className="lg:w-2/5 lg:mt-60 w-full">
+  <div className="flex flex-col justify-items-center items-center align-middle lg:pl-8 lg:mt-0 mt-4 mx-3">
+ 
+   
+  
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27859.061781462937!2d78.9569229!3d29.212295100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a43c0c5694dd1%3A0xe193d5f15c9333a0!2sKashipur%2C%20Uttarakhand%20244713!5e0!3m2!1sen!2sin!4v1693960899857!5m2!1sen!2sin"
+  title="Example Website"
+  style={{ width: '600px', height: '600px', marginTop: '-190px' }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+></iframe>
+
+  </div>
+</div>
+
         <div className="lg:w-3/5 w-full flex justify-center items-center">
           <section className="px-6 py-4 mx-auemail bg-white text-black rounded-md dark:bg-gray-800 mt-4 ">
-            <h2 className="text-3xl font-semibold text-center text-black dark:text-white">
+            {/* <h2 className="text-3xl font-semibold text-center text-black dark:text-white">
               Get in Touch
-            </h2>
+            </h2> */}
             <p className="mt-3 text-center text-gray-700 dark:text-gray-400 text-justify">
             We're here to listen and assist you on your educational journey. Whether you're seeking information on admissions, scholarships, academic programs, or anything else related to your college experience, we're just a message away. Feel free to reach out to us using the form below, and we'll ensure you receive the guidance and support you need. Your success is our priority, and we look forward to connecting with you!
 

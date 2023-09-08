@@ -148,7 +148,7 @@ export default function Navbar() {
               </li>
               <li onMouseEnter={onKDMouseEnter} onMouseLeave={onKDMouseLeave}>
                 <NavLink
-                  to="/blogs"
+                  to="/"
                   aria-label="Our product"
                   title="Our product"
                   className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -165,6 +165,15 @@ export default function Navbar() {
                   About
                 </NavLink>
                 {KEdropdown && <KE />}
+              </li>
+              <li>
+                <Link
+                  to="/articles"
+                  title=""
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Blogs
+                </Link>
               </li>
               <li>
                 <Link
